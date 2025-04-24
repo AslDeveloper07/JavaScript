@@ -1,4 +1,6 @@
-1 - MASALA
+/*
+
+//1 - MASALA
 
 let onlyString = "Asilbek ";
 let result = "";
@@ -10,7 +12,7 @@ for (let i = 0; i < 3; i++) {
 console.log(result);
 
 
-2 - MASALA
+//2 - MASALA
 
 let originalString = "Hello";
 let charCount = {};
@@ -26,7 +28,7 @@ for (let char of originalString) {
 console.log(charCount);
 
 
-3 - MASALA
+//3 - MASALA
 
 let originalString = "assalomu alaykum akajon yaxshimisiz";
 let result = "";
@@ -39,7 +41,7 @@ for (let i = 0; i < originalString.length; i++) {
 
 console.log(result);
 
-4 - MASALA
+//4 - MASALA
 
 let input = "Asilbek09w89Suvonov83928r";
 let result = "";
@@ -53,7 +55,7 @@ for (let i = 0; i < input.length; i++) {
 console.log(result);
 
 
-5 - MASALA
+//5 - MASALA
 
 
 let text = "bugun tabiat juda chiroyli va Navruz bayrami bulyabdi";
@@ -68,7 +70,7 @@ for (let i = 0; i < text.length; i++) {
 console.log(misol);
 
 
-6  - MASALA
+//6  - MASALA
 
 let text = "Assalomu alaykum!";
 let teskariStr = '';
@@ -80,7 +82,7 @@ for (let i = text.length - 1; i >= 0; i--) {
 console.log(teskariStr);
 
 
-7 - MASALA
+//7 - MASALA
 
 let input = "abc123def";
 let letters = "";
@@ -97,7 +99,7 @@ for (let i = 0; i < input.length; i++) {
 
 console.log("Letters: " + letters + ", Numbers: " + numbers);
 
-8 - MASALA
+//8 - MASALA
 
 let input = "Salom men Asilbekman";
 let natija = "";
@@ -120,7 +122,7 @@ if (soz !== "") {
 
 console.log(natija);
 
-9 - MASALA
+//9 - MASALA
 
 let input = "abc";
 let output = "";
@@ -135,7 +137,7 @@ for (let i = 0; i < input.length; i++) {
 
 console.log(output);
 
-10 - MASALA
+//10 - MASALA
 
 
 let input = "salom mening ismim Asilbek";
@@ -156,7 +158,7 @@ for (let i = 0; i <= input.length; i++) {
 
 console.log(uzunSoz);
 
-11 - MASALA
+//11 - MASALA
 
 let input = "madam";
 let palindrome = true;
@@ -170,7 +172,7 @@ for (let i = 0; i < Math.floor(input.length / 2); i++) {
 
 console.log(palindrome);
 
-12 -MASALA
+//12 -MASALA
 
 let suzlar = "FKSJHFJ290890183RHWEI98234928EDJSED3R928E";
 let result = 0;
@@ -184,26 +186,26 @@ for (let i = 0; i < suzlar.length; i++) {
 
 console.log(result);
 
-1 -masala
+//1 -masala
 
 let fruits=["olma", "nok", "shaftoli", "uzum"]
 fruits.push("anor", "behi")
 console.log(fruits);
 
-2-MASALA
+//2-MASALA
 
 
 let vegetable=["sabzi", "sholgom", "piyoz", "karam"]
 vegetable.pop("chisnok", "kartoshka")
 console.log(vegetable);
 
-3-MASALA
+//3-MASALA
 
 let freinds=["Doston", "Bobur", "Temur", "Maqsad"]
 freinds.unshift("Jonibek", "Otabek")
 console.log(freinds);
 
-4-MASALA
+//4-MASALA
 
 let array = [10, 20, 30, 40];
 let firstElement = array[0];
@@ -215,13 +217,13 @@ let array = [10, 20, 30, 40];
 let firstElement = array[3];
 console.log(firstElement);
 
-6-MASALA
+//6-MASALA
 
 let str = "Salom";
 let oxirgisi = str.slice(-1);
 console.log(oxirgisi);
 
-7- MASALA
+//7- MASALA
 
 for (let i = 2; i < 100; i++) {
     let tub = true;
@@ -236,7 +238,7 @@ for (let i = 2; i < 100; i++) {
     }
   }
 
-8 -MASALA
+//8 -MASALA
 
 for (let i = 10; i <= 99; i++) {
     let a = Math.floor(i / 10);
@@ -246,7 +248,7 @@ for (let i = 10; i <= 99; i++) {
     }
   }
 
-9 -MASALA
+//9 -MASALA
 
 let num = 1234;
 let str = num.toString();
@@ -257,7 +259,7 @@ for (let i = str.length - 1; i >= 0; i--) {
 console.log(reverse);
 
 
-10 -MASALA
+//10 -MASALA
 
 let arr = [9, 2, 11, 4, 7, 8];
 let min = Infinity;
@@ -270,7 +272,7 @@ console.log(`Eng kichik juft son: ${min}`);
 
 
 
-11 -MASALA
+//11 -MASALA
 
 for (let i = 1; i <= 100; i++) {
     if (i % 15 === 0) console.log('FizzBuzz');
@@ -279,7 +281,7 @@ for (let i = 1; i <= 100; i++) {
     else console.log(i);
   }
 
-12 -MASALA
+//12 -MASALA
 
 for (let i = 10; i < 1000; i++) {
     let str = i.toString();
@@ -289,7 +291,8 @@ for (let i = 10; i < 1000; i++) {
     }
   }
 
-12 -MASALA
+//12 -MASALA
+
 let arr = [-3, 4, 7, -1, 0, 5];
 let count = 0, sum = 0;
 for (let i = 0; i < arr.length; i++) {
@@ -300,7 +303,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(`Musbatlar soni: ${count}, yig'indisi: ${sum}`);
 
-13 -MASALA
+//13 -MASALA
 let n = 5;
 for (let i = 1; i <= n; i++) {
   let row = '';
@@ -310,7 +313,7 @@ for (let i = 1; i <= n; i++) {
   console.log(row);
 }
 
-14 -MASALA
+//14 -MASALA
 for (let i = 1; i <= 1000; i++) {
     let sum = 0;
     let num = i;
@@ -323,7 +326,7 @@ for (let i = 1; i <= 1000; i++) {
     }
   }
 
-15 -MASALA
+//15 -MASALA
 let text = "Salom dunyo!";
 let vowels = "aeiouAEIOU";
 let result = '';
@@ -334,7 +337,7 @@ for (let i = 0; i < text.length; i++) {
 }
 console.log(`Unli harflar: ${result}`);
 
-16 -MASALA
+//16 -MASALA
 let n = 100;
 for (let i = 1; i <= n; i++) {
   if (i % 3 === 0 || i % 7 === 0) {
@@ -494,3 +497,5 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 console.log("Manfiy sonlar soni:", count);
+
+*/
