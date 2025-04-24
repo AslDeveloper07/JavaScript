@@ -376,10 +376,45 @@ for (let i = 0; i < arr.length; i++) {
 console.log(result);
 
 //22 -MASALA
+let arr = [5, 10, 15];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
+let avg = sum / arr.length;
+console.log(`O‘rtacha: ${avg}`);
+
 //23 -MASALA
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0 && i % 3 === 0) console.log(i);
+  }
+
 //24 -MASALA
+let text = "hello";
+for (let i = 0; i < text.length; i++) {
+  console.log(`${text[i]}: ${text.charCodeAt(i)}`);
+}
+
 //25 -MASALA
+let n = 29;
+let isPrime = true;
+if (n < 2) isPrime = false;
+for (let i = 2; i <= Math.sqrt(n); i++) {
+  if (n % i === 0) {
+    isPrime = false;
+    break;
+  }
+}
+console.log(isPrime ? "Tub" : "Tub emas");
+
 //26 -MASALA
+let arr = [0, 1, 0, 3, 0, 5];
+let zeroCount = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === 0) zeroCount++;
+}
+console.log(`0 lar soni: ${zeroCount}`);
+
 //27 -MASALA
 //28 -MASALA
 
