@@ -300,7 +300,7 @@
 // }
 // console.log(`Musbatlar soni: ${count}, yig'indisi: ${sum}`);
 
-// //13 -MASALA
+//13 -MASALA
 // let n = 5;
 // for (let i = 1; i <= n; i++) {
 //   let row = '';
@@ -310,7 +310,7 @@
 //   console.log(row);
 // }
 
-// //14 -MASALA
+//14 -MASALA
 // for (let i = 1; i <= 1000; i++) {
 //     let sum = 0;
 //     let num = i;
@@ -323,7 +323,7 @@
 //     }
 //   }
 
-// //15 -MASALA
+// 15 -MASALA
 // let text = "Salom dunyo!";
 // let vowels = "aeiouAEIOU";
 // let result = '';
@@ -333,4 +333,54 @@
 //   }
 // }
 // console.log(`Unli harflar: ${result}`);
+
+//16 -MASALA
+let n = 100;
+for (let i = 1; i <= n; i++) {
+  if (i % 3 === 0 || i % 7 === 0) {
+    console.log(i);
+  }
+}
+
+//17 -MASALA
+let arr = [3, -5, 2, -7, 0, 8, -1];
+let count = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < 0) count++;
+}
+console.log(`Manfiy sonlar: ${count}`);
+
+//18 -MASALA
+let num = 1234;
+let sum = 0;
+for (let digit of num.toString()) {
+  sum += parseInt(digit);
+}
+console.log(sum);
+
+//19 -MASALA
+let str = "Assalomu alaykum";
+let count = 0;
+let vowels = "aeiouAEIOU";
+for (let i = 0; i < str.length; i++) {
+  if (vowels.includes(str[i])) count++;
+}
+console.log(`Unli harflar soni: ${count}`);
+
+//21 -MASALA
+let arr = [2, 3, 4];
+let result = [];
+for (let i = 0; i < arr.length; i++) {
+  result.push(arr[i] ** 2);
+}
+console.log(result);
+
+//22 -MASALA
+//23 -MASALA
+//24 -MASALA
+//25 -MASALA
+//26 -MASALA
+//27 -MASALA
+//28 -MASALA
+
 
