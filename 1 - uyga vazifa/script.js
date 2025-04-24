@@ -257,7 +257,7 @@
 // console.log(reverse);
 
 
-//8 -MASALA
+//10 -MASALA
 
 // let arr = [9, 2, 11, 4, 7, 8];
 // let min = Infinity;
@@ -267,3 +267,70 @@
 //   }
 // }
 // console.log(`Eng kichik juft son: ${min}`);
+
+
+
+//11 -MASALA
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 15 === 0) console.log('FizzBuzz');
+//     else if (i % 3 === 0) console.log('Fizz');
+//     else if (i % 5 === 0) console.log('Buzz');
+//     else console.log(i);
+//   }
+
+//12 -MASALA
+
+// for (let i = 10; i < 1000; i++) {
+//     let str = i.toString();
+//     let rev = str.split('').reverse().join('');
+//     if (str === rev) {
+//       console.log(i);
+//     }
+//   }
+
+//12 -MASALA
+// let arr = [-3, 4, 7, -1, 0, 5];
+// let count = 0, sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     count++;
+//     sum += arr[i];
+//   }
+// }
+// console.log(`Musbatlar soni: ${count}, yig'indisi: ${sum}`);
+
+// //13 -MASALA
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//   let row = '';
+//   for (let j = 1; j <= i; j++) {
+//     row += '*';
+//   }
+//   console.log(row);
+// }
+
+// //14 -MASALA
+// for (let i = 1; i <= 1000; i++) {
+//     let sum = 0;
+//     let num = i;
+//     while (num > 0) {
+//       sum += num % 10;
+//       num = Math.floor(num / 10);
+//     }
+//     if (sum % 5 === 0) {
+//       console.log(i);
+//     }
+//   }
+
+// //15 -MASALA
+// let text = "Salom dunyo!";
+// let vowels = "aeiouAEIOU";
+// let result = '';
+// for (let i = 0; i < text.length; i++) {
+//   if (vowels.includes(text[i])) {
+//     result += text[i];
+//   }
+// }
+// console.log(`Unli harflar: ${result}`);
+
