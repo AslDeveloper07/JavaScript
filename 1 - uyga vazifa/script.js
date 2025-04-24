@@ -221,4 +221,49 @@
 // let oxirgisi = str.slice(-1);
 // console.log(oxirgisi);
 
+//7- MASALA
 
+// for (let i = 2; i < 100; i++) {
+//     let tub = true;
+//     for (let j = 2; j <= Math.sqrt(i); j++) {
+//       if (i % j === 0) {
+//         tub = false;
+//         break;
+//       }
+//     }
+//     if (tub) {
+//       console.log(i);
+//     }
+//   }
+
+//8 -MASALA
+
+// for (let i = 10; i <= 99; i++) {
+//     let a = Math.floor(i / 10);
+//     let b = i % 10;
+//     if (a + b === 10) {
+//       console.log(i);
+//     }
+//   }
+
+//9 -MASALA
+
+// let num = 1234;
+// let str = num.toString();
+// let reverse = '';
+// for (let i = str.length - 1; i >= 0; i--) {
+//   reverse += str[i];
+// }
+// console.log(reverse);
+
+
+//8 -MASALA
+
+// let arr = [9, 2, 11, 4, 7, 8];
+// let min = Infinity;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 0 && arr[i] < min) {
+//     min = arr[i];
+//   }
+// }
+// console.log(`Eng kichik juft son: ${min}`);
