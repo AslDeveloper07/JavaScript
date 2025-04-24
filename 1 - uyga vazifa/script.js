@@ -416,6 +416,21 @@ for (let i = 0; i < arr.length; i++) {
 console.log(`0 lar soni: ${zeroCount}`);
 
 //27 -MASALA
+let str = "Salom DUNYO!";
+let result = '';
+for (let i = 0; i < str.length; i++) {
+  if (str[i] >= 'A' && str[i] <= 'Z') {
+    result += str[i];
+  }
+}
+console.log(result);
+
 //28 -MASALA
+for (let i = 10; i <= 99; i++) {
+    let a = Math.floor(i / 10);
+    let b = i % 10;
+    console.log(`${i}: ${a} va ${b}`);
+  }
+
 
 
