@@ -776,6 +776,18 @@ console.log(splitEvenOdd([1, 2, 3, 4, 5]));
 // { even: [2, 4], odd: [1, 3, 5] }
 
 //57 -MASALA
+
+function capitalizeWords(str) {
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
+  return words.join(" ");
+}
+
+console.log(capitalizeWords("javascript is awesome"));
+// "Javascript Is Awesome"
+
 //58 -MASALA
 //59 -MASALA
 
