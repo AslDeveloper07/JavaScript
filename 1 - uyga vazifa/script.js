@@ -699,4 +699,25 @@ function average(arr) {
 
 console.log(average([10, 20, 30])); // 20
 
+//51 -MASALA
+
+function extractLetters(str) {
+  let result = '';
+  for (let char of str) {
+    if (/[a-zA-Z]/.test(char)) result += char;
+  }
+  return result;
+}
+
+console.log(extractLetters("h3ll0_w0rld!")); // "hllwrld"
+
+//52 -MASALA
+//53 -MASALA
+//54 -MASALA
+//55 -MASALA
+//56 -MASALA
+//57 -MASALA
+//58 -MASALA
+//59 -MASALA
+
 
