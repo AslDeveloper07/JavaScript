@@ -789,6 +789,17 @@ console.log(capitalizeWords("javascript is awesome"));
 // "Javascript Is Awesome"
 
 //58 -MASALA
+
+function countDigits(str) {
+  let count = 0;
+  for (let char of str) {
+    if (/\d/.test(char)) count++;
+  }
+  return count;
+}
+
+console.log(countDigits("a1b2c3")); // 3
+
 //59 -MASALA
 
 
