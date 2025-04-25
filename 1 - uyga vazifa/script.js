@@ -1,4 +1,4 @@
-/*
+
 
 //1 - MASALA
 
@@ -498,4 +498,90 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log("Manfiy sonlar soni:", count);
 
-*/
+//35 -MASALA
+
+function findDuplicates(arr) {
+  let seen = {};
+  let duplicates = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (seen[arr[i]]) {
+      duplicates.push(arr[i]);
+    } else {
+      seen[arr[i]] = true;
+    }
+  }
+  return duplicates;
+}
+
+console.log(findDuplicates([1, 2, 3, 4, 2, 5, 3, 6]));
+
+//36 -MASALA
+
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(17)); // true
+
+//37 -MASALA
+
+function reverseString(str) {
+  let reversed = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
+console.log(reverseString("salom")); // "molas"
+
+//38 -MASALA
+
+function secondLargest(arr) {
+  let max = -Infinity, second = -Infinity;
+  for (let num of arr) {
+    if (num > max) {
+      second = max;
+      max = num;
+    } else if (num > second && num !== max) {
+      second = num;
+    }
+  }
+  return second;
+}
+
+console.log(secondLargest([10, 20, 40, 30, 40])); // 30
+
+//39 -MASALA
+function fibonacci(n) {
+  let a = 0, b = 1, temp;
+  for (let i = 2; i <= n; i++) {
+    temp = a + b;
+    a = b;
+    b = temp;
+  }
+  return n ? b : 0;
+}
+
+console.log(fibonacci(7)); // 13
+
+//40 -MASALA
+
+function mostFrequentChar(str) {
+  let freq = {}, maxChar = '', maxCount = 0;
+  for (let char of str) {
+    freq[char] = (freq[char] || 0) + 1;
+    if (freq[char] > maxCount) {
+      maxCount = freq[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
+}
+
+console.log(mostFrequentChar("banana")); // "a"
+
