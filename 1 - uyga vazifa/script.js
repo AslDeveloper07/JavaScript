@@ -737,6 +737,19 @@ function getNegatives(arr) {
 console.log(getNegatives([-1, 5, -3, 7, -2])); // [-1, -3, -2]
 
 //54 -MASALA
+
+function commonElements(arr1, arr2) {
+  let result = [];
+  for (let item of arr1) {
+    if (arr2.includes(item) && !result.includes(item)) {
+      result.push(item);
+    }
+  }
+  return result;
+}
+
+console.log(commonElements([1, 2, 3], [2, 3, 4])); // [2, 3]
+
 //55 -MASALA
 //56 -MASALA
 //57 -MASALA
