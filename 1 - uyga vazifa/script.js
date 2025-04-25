@@ -763,6 +763,18 @@ function squareArray(arr) {
 console.log(squareArray([2, 3, 4])); // [4, 9, 16]
 
 //56 -MASALA
+function splitEvenOdd(arr) {
+  let even = [], odd = [];
+  for (let num of arr) {
+    if (num % 2 === 0) even.push(num);
+    else odd.push(num);
+  }
+  return { even, odd };
+}
+
+console.log(splitEvenOdd([1, 2, 3, 4, 5]));
+// { even: [2, 4], odd: [1, 3, 5] }
+
 //57 -MASALA
 //58 -MASALA
 //59 -MASALA
