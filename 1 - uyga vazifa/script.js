@@ -712,6 +712,18 @@ function extractLetters(str) {
 console.log(extractLetters("h3ll0_w0rld!")); // "hllwrld"
 
 //52 -MASALA
+
+function firstUniqueChar(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      return str[i];
+    }
+  }
+  return null;
+}
+
+console.log(firstUniqueChar("aabbcddee")); // "c"
+
 //53 -MASALA
 //54 -MASALA
 //55 -MASALA
