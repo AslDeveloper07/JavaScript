@@ -670,6 +670,7 @@ function toCamelCase(str) {
 console.log(toCamelCase("hello world example")); // "helloWorldExample"
 
 //48 -MASALA
+
 function countEven(arr) {
   let count = 0;
   for (let num of arr) {
@@ -680,5 +681,14 @@ function countEven(arr) {
 
 console.log(countEven([1, 2, 3, 4, 5, 6])); // 3
 
+//49 -MASALA
+
+function sortLetters(str) {
+  return str.split('').sort().join('');
+}
+
+console.log(sortLetters("javascript")); // "aacijprstv"
+
+//50 -MASALA
 
 
