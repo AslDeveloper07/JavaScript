@@ -725,6 +725,17 @@ function firstUniqueChar(str) {
 console.log(firstUniqueChar("aabbcddee")); // "c"
 
 //53 -MASALA
+
+function getNegatives(arr) {
+  let result = [];
+  for (let num of arr) {
+    if (num < 0) result.push(num);
+  }
+  return result;
+}
+
+console.log(getNegatives([-1, 5, -3, 7, -2])); // [-1, -3, -2]
+
 //54 -MASALA
 //55 -MASALA
 //56 -MASALA
