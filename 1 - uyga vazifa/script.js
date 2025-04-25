@@ -585,3 +585,100 @@ function mostFrequentChar(str) {
 
 console.log(mostFrequentChar("banana")); // "a"
 
+//41 -MASALA
+function sumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4])); // 10
+
+//42 -MASALA
+
+function countVowels(str) {
+  let vowels = "aeiouAEIOU";
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) count++;
+  }
+  return count;
+}
+
+console.log(countVowels("Salom dunyo")); // 4
+
+//43 -MASALA
+
+function oddNumbers(n) {
+  let result = [];
+  for (let i = 1; i <= n; i += 2) {
+    result.push(i);
+  }
+  return result;
+}
+
+console.log(oddNumbers(10)); // [1, 3, 5, 7, 9]
+
+//44 -MASALA
+
+function findMin(arr) {
+  let min = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) min = arr[i];
+  }
+  return min;
+}
+
+console.log(findMin([5, 2, 8, 1, 9])); // 1
+
+//45 -MASALA
+
+function factorial(n) {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+console.log(factorial(5)); // 120
+
+//46 -MASALA
+
+function charCount(str) {
+  let count = {};
+  for (let char of str) {
+    count[char] = (count[char] || 0) + 1;
+  }
+  return count;
+}
+
+console.log(charCount("hello")); // { h: 1, e: 1, l: 2, o: 1 }
+
+//47 -MASALA
+
+function toCamelCase(str) {
+  let words = str.split(" ");
+  for (let i = 1; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
+  return words.join("");
+}
+
+console.log(toCamelCase("hello world example")); // "helloWorldExample"
+
+//48 -MASALA
+function countEven(arr) {
+  let count = 0;
+  for (let num of arr) {
+    if (num % 2 === 0) count++;
+  }
+  return count;
+}
+
+console.log(countEven([1, 2, 3, 4, 5, 6])); // 3
+
+
+
