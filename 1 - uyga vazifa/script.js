@@ -751,6 +751,17 @@ function commonElements(arr1, arr2) {
 console.log(commonElements([1, 2, 3], [2, 3, 4])); // [2, 3]
 
 //55 -MASALA
+
+function squareArray(arr) {
+  let result = [];
+  for (let num of arr) {
+    result.push(num * num);
+  }
+  return result;
+}
+
+console.log(squareArray([2, 3, 4])); // [4, 9, 16]
+
 //56 -MASALA
 //57 -MASALA
 //58 -MASALA
