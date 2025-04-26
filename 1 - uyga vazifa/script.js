@@ -884,7 +884,7 @@ console.log(product);
 
 let n = 4312;
 let sorted = n.toString().split('').sort().join('');
-console.log(n < parseInt(sorted)); // true
+console.log(n < parseInt(sorted));
 
 //69 -MASALA
 let n = 50;
@@ -902,7 +902,48 @@ for (let i = 0; i < str.length; i++) {
     break;
   }
 }
-console.log(found); // true
+console.log(found);
+
+
+//71 -MASALA
+for (let i = 10; i <= 99; i++) {
+  let str = i.toString();
+  if (parseInt(str[0]) % 2 === 0 && parseInt(str[1]) % 2 === 0) {
+    console.log(i);
+  }
+}
+
+//72 -MASALA
+let n = 134;
+let sum = 0;
+for (let digit of n.toString()) {
+  sum += Math.pow(parseInt(digit), 2);
+}
+console.log(sum); // 1² + 3² + 4² = 1+9+16 = 26
+
+//73 -MASALA
+let arr = [2, 5, 7, 8, 11];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 !== 0) sum += arr[i];
+}
+console.log(sum); // 5 + 7 + 11 = 23
+
+//74 -MASALA
+let n = 20;
+for (let i = 1; i <= n; i++) {
+  let sum = 0;
+  for (let digit of i.toString()) {
+    sum += parseInt(digit);
+  }
+  console.log(`${i} => ${sum}`);
+}
+
+//75 -MASALA
+//76 -MASALA
+//77 -MASALA
+//78 -MASALA
+//79 -MASALA
 
 
 
