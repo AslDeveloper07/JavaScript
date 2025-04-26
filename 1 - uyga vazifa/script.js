@@ -1020,8 +1020,27 @@ for (let i = 1; i <= n; i++) {
 }
 
 //85 -MASALA
+let str = "Bu Matnda Katta Harflar Bor";
+let count = 0;
+for (let i = 0; i < str.length; i++) {
+  if (str[i] >= 'A' && str[i] <= 'Z') count++;
+}
+console.log(count);
+
 //86 -MASALA
+let n = 28;
+for (let i = 1; i <= n; i++) {
+  if (n % i === 0) console.log(i);
+}
+
 //87 -MASALA
+let n = 456;
+let result = '';
+for (let digit of n.toString()) {
+  result += parseInt(digit) + 1;
+}
+console.log(result); // 567
+
 //88 -MASALA
 //89 -MASALA
 
