@@ -940,8 +940,27 @@ for (let i = 1; i <= n; i++) {
 }
 
 //75 -MASALA
+let n = 10;
+let binary = '';
+for (let i = n; i > 0; i = Math.floor(i / 2)) {
+  binary = (i % 2) + binary;
+}
+console.log(binary); // 1010
+
 //76 -MASALA
+let n = 10;
+for (let i = 1; i <= n; i++) {
+  console.log(`${i}^3 = ${i ** 3}`);
+}
+
 //77 -MASALA
+let arr = [-3, 2, 5, -7, 4];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > 0) sum += arr[i];
+}
+console.log(sum); // 2 + 5 + 4 = 11
+
 //78 -MASALA
 //79 -MASALA
 
