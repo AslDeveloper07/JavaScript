@@ -1,5 +1,5 @@
 
-
+/*
 //1 - MASALA
 
 let onlyString = "Asilbek ";
@@ -525,7 +525,7 @@ function isPrime(n) {
   return true;
 }
 
-console.log(isPrime(17)); // true
+console.log(isPrime(17));
 
 //37 -MASALA
 
@@ -537,7 +537,7 @@ function reverseString(str) {
   return reversed;
 }
 
-console.log(reverseString("salom")); // "molas"
+console.log(reverseString("salom"));
 
 //38 -MASALA
 
@@ -554,7 +554,7 @@ function secondLargest(arr) {
   return second;
 }
 
-console.log(secondLargest([10, 20, 40, 30, 40])); // 30
+console.log(secondLargest([10, 20, 40, 30, 40]));
 
 //39 -MASALA
 function fibonacci(n) {
@@ -567,7 +567,7 @@ function fibonacci(n) {
   return n ? b : 0;
 }
 
-console.log(fibonacci(7)); // 13
+console.log(fibonacci(7));
 
 //40 -MASALA
 
@@ -583,7 +583,7 @@ function mostFrequentChar(str) {
   return maxChar;
 }
 
-console.log(mostFrequentChar("banana")); // "a"
+console.log(mostFrequentChar("banana"));
 
 //41 -MASALA
 function sumArray(arr) {
@@ -594,7 +594,7 @@ function sumArray(arr) {
   return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4])); // 10
+console.log(sumArray([1, 2, 3, 4]));
 
 //42 -MASALA
 
@@ -607,8 +607,7 @@ function countVowels(str) {
   return count;
 }
 
-console.log(countVowels("Salom dunyo")); // 4
-
+console.log(countVowels("Salom dunyo"));
 //43 -MASALA
 
 function oddNumbers(n) {
@@ -619,7 +618,7 @@ function oddNumbers(n) {
   return result;
 }
 
-console.log(oddNumbers(10)); // [1, 3, 5, 7, 9]
+console.log(oddNumbers(10));
 
 //44 -MASALA
 
@@ -631,7 +630,7 @@ function findMin(arr) {
   return min;
 }
 
-console.log(findMin([5, 2, 8, 1, 9])); // 1
+console.log(findMin([5, 2, 8, 1, 9]));
 
 //45 -MASALA
 
@@ -643,7 +642,7 @@ function factorial(n) {
   return result;
 }
 
-console.log(factorial(5)); // 120
+console.log(factorial(5));
 
 //46 -MASALA
 
@@ -655,7 +654,7 @@ function charCount(str) {
   return count;
 }
 
-console.log(charCount("hello")); // { h: 1, e: 1, l: 2, o: 1 }
+console.log(charCount("hello"));
 
 //47 -MASALA
 
@@ -667,8 +666,7 @@ function toCamelCase(str) {
   return words.join("");
 }
 
-console.log(toCamelCase("hello world example")); // "helloWorldExample"
-
+console.log(toCamelCase("hello world example"));
 //48 -MASALA
 
 function countEven(arr) {
@@ -679,7 +677,7 @@ function countEven(arr) {
   return count;
 }
 
-console.log(countEven([1, 2, 3, 4, 5, 6])); // 3
+console.log(countEven([1, 2, 3, 4, 5, 6]));
 
 //49 -MASALA
 
@@ -687,7 +685,7 @@ function sortLetters(str) {
   return str.split('').sort().join('');
 }
 
-console.log(sortLetters("javascript")); // "aacijprstv"
+console.log(sortLetters("javascript"));
 
 //50 -MASALA
 
@@ -697,7 +695,7 @@ function average(arr) {
   return sum / arr.length;
 }
 
-console.log(average([10, 20, 30])); // 20
+console.log(average([10, 20, 30]));
 
 //51 -MASALA
 
@@ -709,7 +707,7 @@ function extractLetters(str) {
   return result;
 }
 
-console.log(extractLetters("h3ll0_w0rld!")); // "hllwrld"
+console.log(extractLetters("h3ll0_w0rld!"));
 
 //52 -MASALA
 
@@ -722,7 +720,7 @@ function firstUniqueChar(str) {
   return null;
 }
 
-console.log(firstUniqueChar("aabbcddee")); // "c"
+console.log(firstUniqueChar("aabbcddee"));
 
 //53 -MASALA
 
@@ -734,7 +732,7 @@ function getNegatives(arr) {
   return result;
 }
 
-console.log(getNegatives([-1, 5, -3, 7, -2])); // [-1, -3, -2]
+console.log(getNegatives([-1, 5, -3, 7, -2]));
 
 //54 -MASALA
 
@@ -748,7 +746,7 @@ function commonElements(arr1, arr2) {
   return result;
 }
 
-console.log(commonElements([1, 2, 3], [2, 3, 4])); // [2, 3]
+console.log(commonElements([1, 2, 3], [2, 3, 4]));
 
 //55 -MASALA
 
@@ -760,7 +758,7 @@ function squareArray(arr) {
   return result;
 }
 
-console.log(squareArray([2, 3, 4])); // [4, 9, 16]
+console.log(squareArray([2, 3, 4]));
 
 //56 -MASALA
 function splitEvenOdd(arr) {
@@ -773,7 +771,6 @@ function splitEvenOdd(arr) {
 }
 
 console.log(splitEvenOdd([1, 2, 3, 4, 5]));
-// { even: [2, 4], odd: [1, 3, 5] }
 
 //57 -MASALA
 
@@ -786,7 +783,7 @@ function capitalizeWords(str) {
 }
 
 console.log(capitalizeWords("javascript is awesome"));
-// "Javascript Is Awesome"
+
 
 //58 -MASALA
 
@@ -798,7 +795,7 @@ function countDigits(str) {
   return count;
 }
 
-console.log(countDigits("a1b2c3")); // 3
+console.log(countDigits("a1b2c3"));
 
 //59 -MASALA
 
@@ -810,7 +807,63 @@ function countUpperCase(str) {
   return count;
 }
 
-console.log(countUpperCase("HeLLo World")); // 4
+console.log(countUpperCase("HeLLo World"));
+*/
 
+//60 -MASALA
+let n = 30;
+for (let i = 2; i <= n; i++) {
+  let tub = true;
+  for (let j = 2; j <= Math.sqrt(i); j++) {
+    if (i % j === 0) {
+      tub = false;
+      break;
+    }
+  }
+  if (tub) console.log(i);
+}
 
+//61 -MASALA
+let n = 12345;
+let reversed = '';
+for (let i = n.toString().length - 1; i >= 0; i--) {
+  reversed += n.toString()[i];
+}
+console.log(reversed); // "54321"
+
+//62 -MASALA
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log(i);
+  }
+}
+
+//63 -MASALA
+let n = 50;
+let a = 0, b = 1;
+for (; a <= n;) {
+  console.log(a);
+  let temp = a + b;
+  a = b;
+  b = temp;
+}
+
+//64 -MASALA
+let n = 6;
+let fact = 1;
+for (let i = 1; i <= n; i++) {
+  fact *= i;
+}
+console.log(fact); // 720
+
+//65 -MASALA
+let n = 234;
+let sum = 0;
+for (let i = 0; i < n.toString().length; i++) {
+  sum += parseInt(n.toString()[i]);
+}
+console.log(sum); // 2+3+4 = 9
+
+//66 -MASALA
+//67 -MASALA
 
