@@ -865,5 +865,19 @@ for (let i = 0; i < n.toString().length; i++) {
 console.log(sum); // 2+3+4 = 9
 
 //66 -MASALA
+let n = 15;
+let sum = 0;
+for (let i = 1; i <= n; i += 2) {
+  sum += i;
+}
+console.log(sum); // 1+3+5+...+15
+
 //67 -MASALA
+let n = 10;
+let product = 1;
+for (let i = 2; i <= n; i += 2) {
+  product *= i;
+}
+console.log(product); // 2*4*6*8*10
+
 
