@@ -1039,10 +1039,20 @@ let result = '';
 for (let digit of n.toString()) {
   result += parseInt(digit) + 1;
 }
-console.log(result); // 567
-
+console.log(result);
 //88 -MASALA
+let str = "Bu 2025-yilda sodir bo‘lgan 3 ta holat.";
+let count = 0;
+for (let ch of str) {
+  if (ch >= '0' && ch <= '9') count++;
+}
+console.log(count);
+
 //89 -MASALA
+let n = 41253;
+let arr = n.toString().split('').sort();
+console.log(arr.join(''));
+
 
 
 
