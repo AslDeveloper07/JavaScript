@@ -880,4 +880,30 @@ for (let i = 2; i <= n; i += 2) {
 }
 console.log(product);
 
+//68 -MASALA
+
+let n = 4312;
+let sorted = n.toString().split('').sort().join('');
+console.log(n < parseInt(sorted)); // true
+
+//69 -MASALA
+let n = 50;
+for (let i = 1; i <= n; i++) {
+  if (i % 2 === 0 && i % 3 === 0) console.log(i);
+}
+
+//70 -MASALA
+let n = 122345;
+let str = n.toString();
+let found = false;
+for (let i = 0; i < str.length; i++) {
+  if (str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
+    found = true;
+    break;
+  }
+}
+console.log(found); // true
+
+
+
 
