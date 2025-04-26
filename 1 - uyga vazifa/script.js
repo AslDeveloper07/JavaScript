@@ -829,7 +829,7 @@ let reversed = '';
 for (let i = n.toString().length - 1; i >= 0; i--) {
   reversed += n.toString()[i];
 }
-console.log(reversed); // "54321"
+console.log(reversed);
 
 //62 -MASALA
 for (let i = 1; i <= 100; i++) {
@@ -854,7 +854,7 @@ let fact = 1;
 for (let i = 1; i <= n; i++) {
   fact *= i;
 }
-console.log(fact); // 720
+console.log(fact);
 
 //65 -MASALA
 let n = 234;
@@ -862,7 +862,7 @@ let sum = 0;
 for (let i = 0; i < n.toString().length; i++) {
   sum += parseInt(n.toString()[i]);
 }
-console.log(sum); // 2+3+4 = 9
+console.log(sum);
 
 //66 -MASALA
 let n = 15;
@@ -870,7 +870,7 @@ let sum = 0;
 for (let i = 1; i <= n; i += 2) {
   sum += i;
 }
-console.log(sum); // 1+3+5+...+15
+console.log(sum);
 
 //67 -MASALA
 let n = 10;
@@ -878,6 +878,6 @@ let product = 1;
 for (let i = 2; i <= n; i += 2) {
   product *= i;
 }
-console.log(product); // 2*4*6*8*10
+console.log(product);
 
 
