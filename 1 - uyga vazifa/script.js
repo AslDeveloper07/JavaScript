@@ -919,7 +919,7 @@ let sum = 0;
 for (let digit of n.toString()) {
   sum += Math.pow(parseInt(digit), 2);
 }
-console.log(sum); // 1² + 3² + 4² = 1+9+16 = 26
+console.log(sum);
 
 //73 -MASALA
 let arr = [2, 5, 7, 8, 11];
@@ -927,7 +927,7 @@ let sum = 0;
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] % 2 !== 0) sum += arr[i];
 }
-console.log(sum); // 5 + 7 + 11 = 23
+console.log(sum);
 
 //74 -MASALA
 let n = 20;
@@ -945,7 +945,7 @@ let binary = '';
 for (let i = n; i > 0; i = Math.floor(i / 2)) {
   binary = (i % 2) + binary;
 }
-console.log(binary); // 1010
+console.log(binary);
 
 //76 -MASALA
 let n = 10;
@@ -959,10 +959,73 @@ let sum = 0;
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] > 0) sum += arr[i];
 }
-console.log(sum); // 2 + 5 + 4 = 11
+console.log(sum);
 
 //78 -MASALA
+let arr = [3, -2, 4, -5, 1];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < 0) console.log(arr[i]);
+}
+
 //79 -MASALA
+let n = 246;
+let result = '';
+for (let digit of n.toString()) {
+  result += parseInt(digit) + 2;
+}
+console.log(result);
+
+//81 -MASALA
+let n = 50;
+let count = 0;
+for (let i = 2; i <= n; i++) {
+  let isPrime = true;
+  for (let j = 2; j <= Math.sqrt(i); j++) {
+    if (i % j === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+  if (isPrime) count++;
+}
+console.log(count);
+
+//82 -MASALA
+let str = "O‘zbekiston";
+let vowels = "aeiouAEIOUo‘O‘";
+let result = '';
+for (let i = 0; i < str.length; i++) {
+  if (!vowels.includes(str[i])) result += str[i];
+}
+console.log(result);
+
+//83 -MASALA
+let arr = [7, 4, 2, 9, 12];
+let minEven = Infinity;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0 && arr[i] < minEven) {
+    minEven = arr[i];
+  }
+}
+console.log(minEven); // 2
+
+//84 -MASALA
+let n = 20;
+for (let i = 1; i <= n; i++) {
+  let product = 1;
+  for (let digit of i.toString()) {
+    product *= parseInt(digit);
+  }
+  console.log(`${i}: ${product}`);
+}
+
+//85 -MASALA
+//86 -MASALA
+//87 -MASALA
+//88 -MASALA
+//89 -MASALA
+
+
 
 
 
