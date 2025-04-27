@@ -355,4 +355,20 @@ function sumEvenNumbers(arr) {
   }
   return sum;
 }
+//15 - MASALA
+
+function filterOddNumbers(arr) {
+  let result = [];
+  for (let num of arr) {
+    if (num % 2 !== 0) {
+      result.push(num);
+    }
+  }
+  return result;
+}
+
+//16 - MASALA
+//17 - MASALA
+//18 - MASALA
+
 
