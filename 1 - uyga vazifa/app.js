@@ -368,6 +368,15 @@ function filterOddNumbers(arr) {
 }
 
 //16 - MASALA
+
+function averageArray(arr) {
+  let sum = 0;
+  for (let num of arr) {
+    sum += num;
+  }
+  return sum / arr.length;
+}
+
 //17 - MASALA
 //18 - MASALA
 
