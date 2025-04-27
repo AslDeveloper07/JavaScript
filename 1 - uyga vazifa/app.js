@@ -299,6 +299,15 @@ function maxInArray(arr) {
 }
 
 //10 - MASALA
+
+function reverseString(str) {
+  let reversed = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
 //11 - MASALA
 //12 - MASALA
 //13 - MASALA
