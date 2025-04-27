@@ -411,5 +411,15 @@ function minInArray(arr) {
 
 //20 - MASALA
 
+function reverseDigits(n) {
+  let reversed = 0;
+  while (n > 0) {
+    reversed = reversed * 10 + (n % 10);
+    n = Math.floor(n / 10);
+  }
+  return reversed;
+}
+
+
 
 
