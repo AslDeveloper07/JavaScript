@@ -255,7 +255,6 @@ console.log(card.calcTotalProduct());
 console.log(card.calcTotalAmount());
 
 
-*/
 
 //6 - MASALA
 
@@ -420,6 +419,7 @@ function reverseDigits(n) {
   return reversed;
 }
 
+*/
 
 
 
