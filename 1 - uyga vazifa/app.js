@@ -333,4 +333,15 @@ function isPalindrome(str) {
 }
 
 //13 - MASALA
+
+function sumEvenNumbers(arr) {
+  let sum = 0;
+  for (let num of arr) {
+    if (num % 2 === 0) {
+      sum += num;
+    }
+  }
+  return sum;
+}
+
 //14 - MASALA
