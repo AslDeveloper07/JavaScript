@@ -550,6 +550,12 @@ function isArmstrong(num) {
 console.log(isArmstrong(153)); // true
 
 //34 - MASALA
+
+function uniqueNumbers(arr) {
+  return [...new Set(arr)];
+}
+console.log(uniqueNumbers([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
+
 //35 - MASALA
 //36 - MASALA
 //37 - MASALA
