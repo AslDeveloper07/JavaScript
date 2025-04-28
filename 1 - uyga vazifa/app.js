@@ -446,6 +446,17 @@ function fibonacciSum(n) {
 console.log(fibonacciSum(5)); // 7
 
 //23 - MASALA
+
+function factorial(n) {
+  if (n === 0) return 1;
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorial(5)); // 120
+
 //24 - MASALA
 //25 - MASALA
 //26 - MASALA
