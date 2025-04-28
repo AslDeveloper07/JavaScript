@@ -512,6 +512,24 @@ function formatDate(date) {
 console.log(formatDate('2025-04-28')); // 28/4/2025
 
 //31 - MASALA
+
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+function getPrimes(limit) {
+  let primes = [];
+  for (let i = 2; i <= limit; i++) {
+    if (isPrime(i)) primes.push(i);
+  }
+  return primes;
+}
+console.log(getPrimes(30)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
 //32 - MASALA
 //33 - MASALA
 //34 - MASALA
