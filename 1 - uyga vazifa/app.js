@@ -538,6 +538,17 @@ function fibonacci(n) {
 console.log(fibonacci(5)); // 5
 
 //33 - MASALA
+function isArmstrong(num) {
+  let sum = 0, temp = num, digits = num.toString().length;
+  while (temp > 0) {
+    let digit = temp % 10;
+    sum += Math.pow(digit, digits);
+    temp = Math.floor(temp / 10);
+  }
+  return sum === num;
+}
+console.log(isArmstrong(153)); // true
+
 //34 - MASALA
 //35 - MASALA
 //36 - MASALA
