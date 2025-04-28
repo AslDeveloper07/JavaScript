@@ -455,21 +455,21 @@ function factorial(n) {
   }
   return result;
 }
-console.log(factorial(5)); // 120
+console.log(factorial(5));
 
 //24 - MASALA
 
 function sumDigits(n) {
   return n.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
 }
-console.log(sumDigits(123)); // 6
+console.log(sumDigits(123));
 
 //25 - MASALA
 
 function sumDigits(n) {
   return n.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
 }
-console.log(sumDigits(123)); // 6
+console.log(sumDigits(123));
 
 //26 - MASALA
 
@@ -485,9 +485,15 @@ printPyramid(5);
 
 let a = 5, b = 10;
 [a, b] = [b, a];
-console.log(a, b); // 10 5
+console.log(a, b);
 
 //28 - MASALA
+
+function reverseNumber(n) {
+  return parseInt(n.toString().split('').reverse().join(''));
+}
+console.log(reverseNumber(12345));
+
 //29 - MASALA
 //30 - MASALA
 
