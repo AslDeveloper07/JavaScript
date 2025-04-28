@@ -495,7 +495,22 @@ function reverseNumber(n) {
 console.log(reverseNumber(12345));
 
 //29 - MASALA
+function isPalindrome(str) {
+  if (str.length <= 1) return true;
+  if (str[0] !== str[str.length - 1]) return false;
+  return isPalindrome(str.slice(1, str.length - 1));
+}
+console.log(isPalindrome('racecar')); // true
+console.log(isPalindrome('hello'));   // false
+
 //30 - MASALA
+//31 - MASALA
+//32 - MASALA
+//33 - MASALA
+//34 - MASALA
+//35 - MASALA
+//36 - MASALA
+//37 - MASALA
 
 
 
