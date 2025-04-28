@@ -566,7 +566,18 @@ function maxDifference(arr) {
 console.log(maxDifference([1, 5, 9, 15, 23])); // 22
 
 //36 - MASALA
+
+function findElement(arr, element) {
+  return arr.includes(element) ? element : null;
+}
+console.log(findElement([1, 2, 3], 2)); // 2
+
 //37 - MASALA
+
+function hasSquare(arr) {
+  return arr.every(num => arr.includes(num * num));
+}
+console.log(hasSquare([1, 4, 9, 16])); // true
 
 
 
