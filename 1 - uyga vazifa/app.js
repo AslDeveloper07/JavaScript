@@ -482,6 +482,11 @@ function printPyramid(n) {
 printPyramid(5);
 
 //27 - MASALA
+
+let a = 5, b = 10;
+[a, b] = [b, a];
+console.log(a, b); // 10 5
+
 //28 - MASALA
 //29 - MASALA
 //30 - MASALA
