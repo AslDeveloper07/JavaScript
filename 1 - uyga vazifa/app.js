@@ -500,16 +500,15 @@ function isPalindrome(str) {
   if (str[0] !== str[str.length - 1]) return false;
   return isPalindrome(str.slice(1, str.length - 1));
 }
-console.log(isPalindrome('racecar')); // true
-console.log(isPalindrome('hello'));   // false
-
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('hello'));
 //30 - MASALA
 
 function formatDate(date) {
   let d = new Date(date);
   return `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`;
 }
-console.log(formatDate('2025-04-28')); // 28/4/2025
+console.log(formatDate('2025-04-28'));
 
 //31 - MASALA
 
@@ -528,9 +527,16 @@ function getPrimes(limit) {
   }
   return primes;
 }
-console.log(getPrimes(30)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+console.log(getPrimes(30));
 
 //32 - MASALA
+
+function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+console.log(fibonacci(5)); // 5
+
 //33 - MASALA
 //34 - MASALA
 //35 - MASALA
