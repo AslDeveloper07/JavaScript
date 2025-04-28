@@ -504,6 +504,13 @@ console.log(isPalindrome('racecar')); // true
 console.log(isPalindrome('hello'));   // false
 
 //30 - MASALA
+
+function formatDate(date) {
+  let d = new Date(date);
+  return `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`;
+}
+console.log(formatDate('2025-04-28')); // 28/4/2025
+
 //31 - MASALA
 //32 - MASALA
 //33 - MASALA
