@@ -535,7 +535,7 @@ function fibonacci(n) {
   if (n <= 1) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
-console.log(fibonacci(5)); // 5
+console.log(fibonacci(5)); 
 
 //33 - MASALA
 function isArmstrong(num) {
@@ -547,14 +547,14 @@ function isArmstrong(num) {
   }
   return sum === num;
 }
-console.log(isArmstrong(153)); // true
+console.log(isArmstrong(153));
 
 //34 - MASALA
 
 function uniqueNumbers(arr) {
   return [...new Set(arr)];
 }
-console.log(uniqueNumbers([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
+console.log(uniqueNumbers([1, 2, 2, 3, 4, 4]));
 
 //35 - MASALA
 
@@ -563,21 +563,20 @@ function maxDifference(arr) {
   let min = Math.min(...arr);
   return max - min;
 }
-console.log(maxDifference([1, 5, 9, 15, 23])); // 22
+console.log(maxDifference([1, 5, 9, 15, 23]));
 
 //36 - MASALA
 
 function findElement(arr, element) {
   return arr.includes(element) ? element : null;
 }
-console.log(findElement([1, 2, 3], 2)); // 2
+console.log(findElement([1, 2, 3], 2));
 
 //37 - MASALA
 
 function hasSquare(arr) {
   return arr.every(num => arr.includes(num * num));
 }
-console.log(hasSquare([1, 4, 9, 16])); // true
-
+console.log(hasSquare([1, 4, 9, 16]));
 
 
