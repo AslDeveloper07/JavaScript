@@ -432,6 +432,19 @@ console.log(isPalindrome('racecar')); // true
 console.log(isPalindrome('hello'));   // false
 
 //22 - MASALA
+
+function fibonacciSum(n) {
+  let a = 0, b = 1, sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += a;
+    let temp = a;
+    a = b;
+    b = temp + b;
+  }
+  return sum;
+}
+console.log(fibonacciSum(5)); // 7
+
 //23 - MASALA
 //24 - MASALA
 //25 - MASALA
