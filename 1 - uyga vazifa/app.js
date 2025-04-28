@@ -422,4 +422,24 @@ function reverseDigits(n) {
 */
 
 
+//21 - MASALA
+
+function isPalindrome(str) {
+  let reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+}
+console.log(isPalindrome('racecar')); // true
+console.log(isPalindrome('hello'));   // false
+
+//22 - MASALA
+//23 - MASALA
+//24 - MASALA
+//25 - MASALA
+//26 - MASALA
+//27 - MASALA
+//28 - MASALA
+//29 - MASALA
+//30 - MASALA
+
+
 
