@@ -465,7 +465,22 @@ function sumDigits(n) {
 console.log(sumDigits(123)); // 6
 
 //25 - MASALA
+
+function sumDigits(n) {
+  return n.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
+}
+console.log(sumDigits(123)); // 6
+
 //26 - MASALA
+
+function printPyramid(n) {
+  for (let i = 1; i <= n; i++) {
+    let stars = ' '.repeat(n - i) + '*'.repeat(2 * i - 1);
+    console.log(stars);
+  }
+}
+printPyramid(5);
+
 //27 - MASALA
 //28 - MASALA
 //29 - MASALA
