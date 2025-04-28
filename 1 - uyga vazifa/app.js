@@ -458,6 +458,12 @@ function factorial(n) {
 console.log(factorial(5)); // 120
 
 //24 - MASALA
+
+function sumDigits(n) {
+  return n.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
+}
+console.log(sumDigits(123)); // 6
+
 //25 - MASALA
 //26 - MASALA
 //27 - MASALA
