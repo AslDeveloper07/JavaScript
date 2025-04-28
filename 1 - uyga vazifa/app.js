@@ -557,6 +557,14 @@ function uniqueNumbers(arr) {
 console.log(uniqueNumbers([1, 2, 2, 3, 4, 4])); // [1, 2, 3, 4]
 
 //35 - MASALA
+
+function maxDifference(arr) {
+  let max = Math.max(...arr);
+  let min = Math.min(...arr);
+  return max - min;
+}
+console.log(maxDifference([1, 5, 9, 15, 23])); // 22
+
 //36 - MASALA
 //37 - MASALA
 
