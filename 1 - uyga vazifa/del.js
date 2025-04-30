@@ -105,109 +105,109 @@
 
 //2 - MASALA
 
-// const users = [];
+const users = [];
 
-// function isValidEmail(email) {
-//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//   return emailRegex.test(email);
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function isValidPassword(password) {
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+  return passwordRegex.test(password);
+}
+
+function addUser(id, email, password, firstName, lastName, birthYear, address) {
+  if (!isValidEmail(email)) {
+    console.log("Email noto‘g‘ri formatda.");
+    return;
+  }
+  if (!isValidPassword(password)) {
+    console.log("Parol kuchsiz. U kamida 8 ta belgi, katta va kichik harf, raqam bo‘lishi kerak.");
+    return;
+  }
+
+  const user = {
+    id,
+    email,
+    password,
+    firstName,
+    lastName,
+    birthYear,
+    address
+  };
+
+  users.push(user);
+  console.log("Foydalanuvchi muvaffaqiyatli qo‘shildi.");
+}
+
+function deleteUser(searchId) {
+  const index = users.findIndex(user => user.id.includes(searchId) || user.id.endsWith(searchId));
+  if (index !== -1) {
+    users.splice(index, 1);
+    console.log(`Foydalanuvchi ID "${searchId}" bo‘yicha o‘chirildi.`);
+  } else {
+    console.log("Bunday IDga ega foydalanuvchi topilmadi.");
+  }
+}
+
+function updateUser(id, newData) {
+  const user = users.find(user => user.id === id);
+  if (!user) {
+    console.log("Foydalanuvchi topilmadi.");
+    return;
+  }
+
+  Object.assign(user, newData);
+  console.log("Foydalanuvchi ma'lumotlari yangilandi.");
+}
+
+function listUsers() {
+  console.log("Foydalanuvchilar ro‘yxati:");
+  users.forEach(user => {
+    console.log(`ID: ${user.id}, Ism: ${user.firstName}, Familiya: ${user.lastName}, Email: ${user.email}, Tug‘ilgan yil: ${user.birthYear}, Yashash joyi: ${user.address}`);
+  });
+}
+
+
+// //3 - MASALA
+
+// const users = []
+// let user1 = {
+//   name: 'Asilbek',
+//   age: 17,
+//   email: 'Aslwexking777@gmail.com'
 // }
-
-// function isValidPassword(password) {
-//   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
-//   return passwordRegex.test(password);
+// let user2 = {
+//   name: 'Asilbek',
+//   age: 17,
+//   email: 'Aslwexking777@gmail.com'
 // }
+// addUser(user1)
+// addUser(user2)
 
-// function addUser(id, email, password, firstName, lastName, birthYear, address) {
-//   if (!isValidEmail(email)) {
-//     console.log("Email noto‘g‘ri formatda.");
-//     return;
-//   }
-//   if (!isValidPassword(password)) {
-//     console.log("Parol kuchsiz. U kamida 8 ta belgi, katta va kichik harf, raqam bo‘lishi kerak.");
-//     return;
-//   }
+// function addUser (user) {
+//   if (user) {
+//     users.push(user)
+//     let foundEmailUser = users.find(user => console.log(item))
+//     console.log('Foydalanuvchi muvaffaqiyatli qushildi');
 
-//   const user = {
-//     id,
-//     email,
-//     password,
-//     firstName,
-//     lastName,
-//     birthYear,
-//     address
-//   };
-
-//   users.push(user);
-//   console.log("Foydalanuvchi muvaffaqiyatli qo‘shildi.");
-// }
-
-// function deleteUser(searchId) {
-//   const index = users.findIndex(user => user.id.includes(searchId) || user.id.endsWith(searchId));
-//   if (index !== -1) {
-//     users.splice(index, 1);
-//     console.log(`Foydalanuvchi ID "${searchId}" bo‘yicha o‘chirildi.`);
 //   } else {
-//     console.log("Bunday IDga ega foydalanuvchi topilmadi.");
+//     console.log("Ma'lumot yuq ")
 //   }
 // }
 
-// function updateUser(id, newData) {
-//   const user = users.find(user => user.id === id);
-//   if (!user) {
-//     console.log("Foydalanuvchi topilmadi.");
-//     return;
+// const listUser = () => {
+//   if (users.length > 0) {
+//     let userList = users.forEach((user) => {
+//       return user
+//     })
+//     return userList
+//   } else {
+//     console.log('foydalanuvchi mavjud emas ');
 //   }
-
-//   Object.assign(user, newData);
-//   console.log("Foydalanuvchi ma'lumotlari yangilandi.");
 // }
-
-// function listUsers() {
-//   console.log("Foydalanuvchilar ro‘yxati:");
-//   users.forEach(user => {
-//     console.log(`ID: ${user.id}, Ism: ${user.firstName}, Familiya: ${user.lastName}, Email: ${user.email}, Tug‘ilgan yil: ${user.birthYear}, Yashash joyi: ${user.address}`);
-//   });
-// }
-
-
-//3 - MASALA
-
-const users = []
-let user1 = {
-  name: 'Asilbek',
-  age: 17,
-  email: 'Aslwexking777@gmail.com'
-}
-let user2 = {
-  name: 'Asilbek',
-  age: 17,
-  email: 'Aslwexking777@gmail.com'
-}
-addUser(user1)
-addUser(user2)
-
-function addUser (user) {
-  if (user) {
-    users.push(user)
-    let foundEmailUser = users.find(user => console.log(item))
-    console.log('Foydalanuvchi muvaffaqiyatli qushildi');
-
-  } else {
-    console.log("Ma'lumot yuq ")
-  }
-}
-
-const listUser = () => {
-  if (users.length > 0) {
-    let userList = users.forEach((user) => {
-      return user
-    })
-    return userList
-  } else {
-    console.log('foydalanuvchi mavjud emas ');
-  }
-}
-listUser()
+// listUser()
 
 
 
