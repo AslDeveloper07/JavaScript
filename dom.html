@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>Foydalanuvchi Boshqaruvi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ff6600;
+}
+
+input {
+  width: calc(100% - 12px);
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.form-section {
+  margin-bottom: 30px;
+  border-top: 2px dashed #ff9f68;
+  padding-top: 20px;
+}
+
+pre {
+  background-color: #fdf2e9;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>👥 Foydalanuvchilar Boshqaruvi</h1>
+
+    <section class="form-section">
+      <h2>➕ Yangi Foydalanuvchini Qo‘shish</h2>
+      <input type="number" id="id" placeholder="ID">
+      <input type="text" id="ism" placeholder="Ism">
+      <input type="text" id="familiya" placeholder="Familiya">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="password" placeholder="Parol">
+      <input type="number" id="age" placeholder="Yosh">
+      <input type="text" id="country" placeholder="Davlat">
+      <button onclick="addUser()">Qo‘shish</button>
+    </section>
+
+    <section class="form-section">
+      <h2>✏️ Foydalanuvchini Yangilash (ID bo‘yicha)</h2>
+      <input type="number" id="updateId" placeholder="ID">
+      <input type="text" id="newCountry" placeholder="Yangi Davlat">
+      <input type="number" id="newAge" placeholder="Yangi Yosh">
+      <button onclick="updateUser()">Yangilash</button>
+    </section>
+
+    <section class="form-section">
+      <h2>🗑️ Foydalanuvchini O‘chirish (ID bo‘yicha)</h2>
+      <input type="number" id="deleteId" placeholder="ID">
+      <button onclick="deleteUser()">O‘chirish</button>
+    </section>
+
+    <section class="form-section">
+      <h2>📋 Foydalanuvchilar Ro‘yxati</h2>
+      <button onclick="listUsers()">Ro‘yxatni Ko‘rsatish</button>
+      <pre id="output"></pre>
+    </section>
+  </div>
+
+  <script>
+    let users = [];
+
+    function addUser() {
+      const user = {
+        id: +document.getElementById("id").value,
+        ism: document.getElementById("ism").value,
+        familiya: document.getElementById("familiya").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+        age: +document.getElementById("age").value,
+        country: document.getElementById("country").value
+      };
+
+      const exists = users.some(u => u.id === user.id);
+      if (exists) return alert("❌ Bu ID allaqachon mavjud!");
+      if (Object.values(user).some(val => val === "" || val === 0)) return alert("⚠️ Hamma maydonlar to‘ldirilishi kerak!");
+
+      users.push(user);
+      alert("✅ Foydalanuvchi qo‘shildi!");
+      clearInputs();
+    }
+
+    function deleteUser() {
+      const id = +document.getElementById("deleteId").value;
+      const oldLength = users.length;
+      users = users.filter(user => user.id !== id);
+      alert(users.length < oldLength ? "🗑️ Foydalanuvchi o‘chirildi." : "⚠️ Bunday ID topilmadi.");
+    }
+
+    function updateUser() {
+      const id = +document.getElementById("updateId").value;
+      const newCountry = document.getElementById("newCountry").value;
+      const newAge = +document.getElementById("newAge").value;
+
+      let found = false;
+      users = users.map(user => {
+        if (user.id === id) {
+          found = true;
+          return { ...user, country: newCountry || user.country, age: newAge || user.age };
+        }
+        return user;
+      });
+
+      alert(found ? "✏️ Foydalanuvchi yangilandi." : "⚠️ ID topilmadi.");
+    }
+
+    function listUsers() {
+      const output = document.getElementById("output");
+      output.textContent = users.length === 0 ? "📭 Ro‘yxat bo‘sh." : users.map(user =>
+        `🆔 ${user.id} | 👤 ${user.ism} ${user.familiya} | ✉️ ${user.email} | 🔐 ${user.password} | 🎂 ${user.age} | 🌍 ${user.country}`
+      ).join("\n");
+    }
+
+    function clearInputs() {
+      ["id", "ism", "familiya", "email", "password", "age", "country"].forEach(id => {
+        document.getElementById(id).value = "";
+      });
+    }
+  </script>
+</body>
+</html>

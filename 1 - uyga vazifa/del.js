@@ -170,5 +170,60 @@
 // }
 
 
+//3 - MASALA
+
+const users = []
+let user1 = {
+  name: 'Asilbek',
+  age: 17,
+  email: 'Aslwexking777@gmail.com'
+}
+let user2 = {
+  name: 'Asilbek',
+  age: 17,
+  email: 'Aslwexking777@gmail.com'
+}
+addUser(user1)
+addUser(user2)
+
+function addUser (user) {
+  if (user) {
+    users.push(user)
+    let foundEmailUser = users.find(user => console.log(item))
+    console.log('Foydalanuvchi muvaffaqiyatli qushildi');
+
+  } else {
+    console.log("Ma'lumot yuq ")
+  }
+}
+
+const listUser = () => {
+  if (users.length > 0) {
+    let userList = users.forEach((user) => {
+      return user
+    })
+    return userList
+  } else {
+    console.log('foydalanuvchi mavjud emas ');
+  }
+}
+listUser()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
