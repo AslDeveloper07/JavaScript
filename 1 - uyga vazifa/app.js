@@ -604,9 +604,34 @@ for (let i = 1; i <= n; i++) {
 console.log(sum);
 
 //42 - MASALA
+let fruits = ["olma", "banan", "shaftoli"];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
 //43 - MASALA
+let n = 7;
+if (n % 2 === 0) {
+  console.log("Juft son");
+} else {
+  console.log("Toq son");
+}
+
 //44 - MASALA
+let a = 8, b = 12;
+console.log(a > b ? a : b);
+
 //45 - MASALA
+
+let n = -3;
+if (n > 0) {
+  console.log("Musbat");
+} else if (n < 0) {
+  console.log("Manfiy");
+} else {
+  console.log("Nol");
+}
+
 //46 - MASALA
 //47- MASALA
 //48 - MASALA
