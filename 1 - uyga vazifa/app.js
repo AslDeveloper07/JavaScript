@@ -579,4 +579,14 @@
 // }
 // console.log(hasSquare([1, 4, 9, 16]));
 
+//38 - MASALA
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+
+//39 - MASALA
+let n = 5;
+console.log(n * n);
+
+//40 - MASALA
 
