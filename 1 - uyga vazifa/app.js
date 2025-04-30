@@ -641,6 +641,12 @@ for (let i = 0; i < arr.length; i++) {
 console.log("Musbat sonlar soni:", count);
 
 //47- MASALA
+
+let n = 10;
+for (let i = 1; i <= n; i += 2) {
+  console.log(i);
+}
+
 //48 - MASALA
 //49 - MASALA
 
