@@ -589,4 +589,27 @@ let n = 5;
 console.log(n * n);
 
 //40 - MASALA
+let n = 5;
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+  sum += i;
+}
+console.log(sum);
+//41 - MASALA
+let n = 5;
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+  sum += i;
+}
+console.log(sum);
+
+//42 - MASALA
+//43 - MASALA
+//44 - MASALA
+//45 - MASALA
+//46 - MASALA
+//47- MASALA
+//48 - MASALA
+//49 - MASALA
+
 
