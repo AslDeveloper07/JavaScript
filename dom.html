@@ -3,76 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <title>Foydalanuvchi Boshqaruvi</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Remix Icons -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<!-- Animate.css for animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- Google Fonts: Roboto -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
   <style>
     body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Osmon rang */
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #007BFF;
+    }
+
+    h1 i, h2 i {
+      margin-right: 8px;
+    }
+
+    input {
+      width: calc(100% - 12px);
+      margin: 6px 0;
+      padding: 10px;
+      border: 2px solid #007BFF;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #0056b3;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .form-section {
+      margin-bottom: 30px;
+      border-top: 2px dashed #80bdff;
+      padding-top: 20px;
+      animation: fadeInUp 0.8s;
+    }
+    body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
   color: #333;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
+/* MODAL STYLES */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
   padding: 30px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: fadeInDown 0.5s ease both;
 }
 
-h1, h2 {
+.modal-content h2 {
+  margin-top: 0;
+  color: #007bff;
   text-align: center;
-  color: #ff6600;
 }
 
-input {
-  width: calc(100% - 12px);
-  margin: 5px 0;
-  padding: 10px;
-  border: 2px solid #ff6600;
-  border-radius: 8px;
+.modal-content p {
+  margin: 10px 0;
   font-size: 16px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #ff6600;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
+.modal-content i {
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 22px;
   cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
+  color: #ff4444;
+  background: none;
+  border: none;
 }
 
-button:hover {
-  background-color: #e65c00;
+    pre {
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: monospace;
+      overflow-x: auto;
+    }
+
+    .icon {
+      font-size: 1.3em;
+      color: #007BFF;
+      margin-right: 5px;
+    }
+    .modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
-.form-section {
-  margin-bottom: 30px;
-  border-top: 2px dashed #ff9f68;
-  padding-top: 20px;
+.modal-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: zoomIn 0.5s;
+  position: relative;
+  font-size: 16px;
 }
 
-pre {
-  background-color: #fdf2e9;
-  padding: 15px;
-  border-radius: 8px;
-  font-family: monospace;
-  overflow-x: auto;
+.modal-content h3 {
+  margin-top: 0;
+  color: #007BFF;
+}
+
+.modal-content i {
+  margin-right: 6px;
+  color: #007BFF;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ff4444;
 }
 
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>👥 Foydalanuvchilar Boshqaruvi</h1>
+  <div class="container animate__animated animate__fadeIn">
+    <h1><i class="ri-group-line icon"></i>Foydalanuvchilar Boshqaruvi</h1>
 
     <section class="form-section">
-      <h2>➕ Yangi Foydalanuvchini Qo‘shish</h2>
+      <h2><i class="ri-user-add-line icon"></i>Yangi Foydalanuvchini Qo‘shish</h2>
       <input type="number" id="id" placeholder="ID">
       <input type="text" id="ism" placeholder="Ism">
       <input type="text" id="familiya" placeholder="Familiya">
@@ -80,28 +208,41 @@ pre {
       <input type="text" id="password" placeholder="Parol">
       <input type="number" id="age" placeholder="Yosh">
       <input type="text" id="country" placeholder="Davlat">
-      <button onclick="addUser()">Qo‘shish</button>
+      <button onclick="addUser()"><i class="ri-add-line"></i> Qo‘shish</button>
     </section>
 
     <section class="form-section">
-      <h2>✏️ Foydalanuvchini Yangilash (ID bo‘yicha)</h2>
+      <h2><i class="ri-edit-line icon"></i>Foydalanuvchini Yangilash (ID bo‘yicha)</h2>
       <input type="number" id="updateId" placeholder="ID">
       <input type="text" id="newCountry" placeholder="Yangi Davlat">
       <input type="number" id="newAge" placeholder="Yangi Yosh">
-      <button onclick="updateUser()">Yangilash</button>
+      <button onclick="updateUser()"><i class="ri-refresh-line"></i> Yangilash</button>
     </section>
 
     <section class="form-section">
-      <h2>🗑️ Foydalanuvchini O‘chirish (ID bo‘yicha)</h2>
+      <h2><i class="ri-delete-bin-line icon"></i>Foydalanuvchini O‘chirish (ID bo‘yicha)</h2>
       <input type="number" id="deleteId" placeholder="ID">
-      <button onclick="deleteUser()">O‘chirish</button>
+      <button onclick="deleteUser()"><i class="ri-delete-back-2-line"></i> O‘chirish</button>
     </section>
 
     <section class="form-section">
-      <h2>📋 Foydalanuvchilar Ro‘yxati</h2>
-      <button onclick="listUsers()">Ro‘yxatni Ko‘rsatish</button>
+      <h2><i class="ri-list-check icon"></i>Foydalanuvchilar Ro‘yxati</h2>
+      <button onclick="listUsers()"><i class="ri-eye-line"></i> Ro‘yxatni Ko‘rsatish</button>
       <pre id="output"></pre>
     </section>
+  </div>
+  <div class="modal" id="userModal">
+    <div class="modal-content animate__animated animate__fadeInDown">
+      <button class="close-btn" onclick="closeModal()"><i class="ri-close-line"></i></button>
+      <h2><i class="ri-user-3-line"></i> Foydalanuvchi Tafsilotlari</h2>
+      <p><i class="ri-id-card-line"></i> <strong>ID:</strong> <span id="modalId"></span></p>
+      <p><i class="ri-user-line"></i> <strong>Ism:</strong> <span id="modalIsm"></span></p>
+      <p><i class="ri-user-smile-line"></i> <strong>Familiya:</strong> <span id="modalFamiliya"></span></p>
+      <p><i class="ri-mail-line"></i> <strong>Email:</strong> <span id="modalEmail"></span></p>
+      <p><i class="ri-lock-password-line"></i> <strong>Parol:</strong> <span id="modalPassword"></span></p>
+      <p><i class="ri-cake-2-line"></i> <strong>Yosh:</strong> <span id="modalAge"></span></p>
+      <p><i class="ri-global-line"></i> <strong>Davlat:</strong> <span id="modalCountry"></span></p>
+    </div>
   </div>
 
   <script>
@@ -163,6 +304,53 @@ pre {
         document.getElementById(id).value = "";
       });
     }
+    function listUsers() {
+  const output = document.getElementById("output");
+  if (users.length === 0) {
+    output.textContent = "Ro‘yxat bo‘sh.";
+    return;
+  }
+
+  output.innerHTML = users.map(user => `
+    <div style="cursor:pointer; margin-bottom:10px; border-bottom:1px dashed #ccc; padding:6px 0;"
+         onclick="showModal(${user.id})">
+      <i class="ri-user-line"></i> ${user.ism} ${user.familiya} - <i class="ri-mail-line"></i> ${user.email}
+    </div>
+  `).join("");
+}
+function listUsers() {
+  const output = document.getElementById("output");
+  if (users.length === 0) {
+    output.textContent = "Ro‘yxat bo‘sh.";
+    return;
+  }
+
+  output.innerHTML = users.map(user => `
+    <div style="cursor:pointer; padding:8px; border-bottom:1px dashed #ccc;" onclick="showModal(${user.id})">
+      <i class="ri-user-line"></i> ${user.ism} ${user.familiya} (<i class="ri-mail-line"></i> ${user.email})
+    </div>
+  `).join("");
+}
+
+function showModal(id) {
+  const user = users.find(u => u.id === id);
+  if (!user) return;
+
+  document.getElementById("modalId").textContent = user.id;
+  document.getElementById("modalIsm").textContent = user.ism;
+  document.getElementById("modalFamiliya").textContent = user.familiya;
+  document.getElementById("modalEmail").textContent = user.email;
+  document.getElementById("modalPassword").textContent = user.password;
+  document.getElementById("modalAge").textContent = user.age;
+  document.getElementById("modalCountry").textContent = user.country;
+
+  document.getElementById("userModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("userModal").style.display = "none";
+}
+
   </script>
 </body>
 </html>
