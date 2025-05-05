@@ -147,3 +147,9 @@
 
 
 //3-MASALA
+function digitalRoot(n) {
+    while (n >= 10) {
+      n = n.toString().split('').reduce((sum, d) => sum + Number(d), 0);
+    }
+    return n;
+  }
