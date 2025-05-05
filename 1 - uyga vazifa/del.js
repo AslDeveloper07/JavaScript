@@ -103,20 +103,42 @@
 // console.log(card.calcTotalAmount());
 
 
-// MASALA
+// //2-MASALA
 
-function runLengthEncode(str) {
-    if (str.length === 0) return "";
+// function runLengthEncode(str) {
+//     if (str.length === 0) return "";
 
-    let result = "";
-    let count = 1;
+//     let result = "";
+//     let count = 1;
 
-    for (let i = 1; i <= str.length; i++) {
-      if (str[i] === str[i - 1]) {
-        count++;
-      } else {
-        result += str[i - 1] + count;
-        count = 1;
+//     for (let i = 1; i <= str.length; i++) {
+//       if (str[i] === str[i - 1]) {
+//         count++;
+//       } else {
+//         result += str[i - 1] + count;
+//         count = 1;
+//       }
+//     }
+
+//     return result;
+//   }
+
+
+//3-MASALA
+
+function mostFrequentChar(str) {
+    const freq = {};
+    for (let char of str) {
+      freq[char] = (freq[char] || 0) + 1;
+    }
+
+    let max = 0;
+    let result = '';
+
+    for (let char in freq) {
+      if (freq[char] > max) {
+        max = freq[char];
+        result = char;
       }
     }
 
