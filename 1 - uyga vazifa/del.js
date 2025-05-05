@@ -126,21 +126,24 @@
 
 //3-MASALA
 
-function mostFrequentChar(str) {
-    const freq = {};
-    for (let char of str) {
-      freq[char] = (freq[char] || 0) + 1;
-    }
+// function mostFrequentChar(str) {
+//     const freq = {};
+//     for (let char of str) {
+//       freq[char] = (freq[char] || 0) + 1;
+//     }
 
-    let max = 0;
-    let result = '';
+//     let max = 0;
+//     let result = '';
 
-    for (let char in freq) {
-      if (freq[char] > max) {
-        max = freq[char];
-        result = char;
-      }
-    }
+//     for (let char in freq) {
+//       if (freq[char] > max) {
+//         max = freq[char];
+//         result = char;
+//       }
+//     }
 
-    return result;
-  }
+//     return result;
+//   }
+
+
+//3-MASALA
