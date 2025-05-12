@@ -146,10 +146,18 @@
 //   }
 
 
-//3-MASALA
-function digitalRoot(n) {
-    while (n >= 10) {
-      n = n.toString().split('').reduce((sum, d) => sum + Number(d), 0);
-    }
-    return n;
-  }
+// //3-MASALA
+// function digitalRoot(n) {
+//     while (n >= 10) {
+//       n = n.toString().split('').reduce((sum, d) => sum + Number(d), 0);
+//     }
+//     return n;
+//   }
+
+//4 - masala
+function exampleFunction() {
+  const x = "declared inside function"; // x can only be used in exampleFunction
+  console.log("Inside function");
+  console.log(x);
+}
+
