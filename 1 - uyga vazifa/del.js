@@ -220,3 +220,68 @@ function fibonacci(n) {
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 console.log(fibonacci(6)); // 8
+
+
+function charCount(str) {
+  const result = {};
+  for (let char of str.toLowerCase()) {
+    if (/[a-z0-9]/.test(char)) {
+      result[char] = (result[char] || 0) + 1;
+    }
+  }
+  return result;
+}
+console.log(charCount("Hello World!"));
+// { h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1 }
+
+
+
+function capitalizeWords(str) {
+  return str.split(' ').map(word =>
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  ).join(' ');
+}
+console.log(capitalizeWords("hello world from js"));
+// "Hello World From Js"
+
+
+
+function isPrime(n) {
+  if (n <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+console.log(isPrime(29)); // true
+
+
+
+function sumArray(arr) {
+  return arr.reduce((sum, num) => sum + num, 0);
+}
+console.log(sumArray([1, 2, 3, 4])); // 10
+
+
+
+
+function longestWord(str) {
+  const words = str.split(' ');
+  let max = "";
+
+  for (let word of words) {
+    if (word.length > max.length) {
+      max = word;
+    }
+  }
+  return max;
+}
+console.log(longestWord("JavaScript is powerful language"));
+// "JavaScript"
+
+
+function isAnagram(str1, str2) {
+  const format = str => str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
+  return format(str1) === format(str2);
+}
+console.log(isAnagram("listen", "silent")); // true
