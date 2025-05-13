@@ -332,3 +332,8 @@ function countEvenOdd(arr) {
 }
 console.log(countEvenOdd([1, 2, 3, 4, 5, 6])); // { even: 3, odd: 3 }
 
+
+function extractDigits(str) {
+  return str.replace(/\D/g, '');
+}
+console.log(extractDigits("abc123xyz")); // "123"
