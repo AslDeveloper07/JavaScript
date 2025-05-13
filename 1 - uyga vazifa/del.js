@@ -347,3 +347,16 @@ function minMax(arr) {
   };
 }
 console.log(minMax([3, 5, 1, 9, 2])); // { min: 1, max: 9 }
+
+
+function countChars(str) {
+  let upper = 0, lower = 0, digit = 0;
+  for (let char of str) {
+    if (/[A-Z]/.test(char)) upper++;
+    else if (/[a-z]/.test(char)) lower++;
+    else if (/[0-9]/.test(char)) digit++;
+  }
+  return { upper, lower, digit };
+}
+console.log(countChars("AbC123xyz"));
+// { upper: 2, lower: 4, digit: 3 }
