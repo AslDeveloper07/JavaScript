@@ -337,3 +337,13 @@ function extractDigits(str) {
   return str.replace(/\D/g, '');
 }
 console.log(extractDigits("abc123xyz")); // "123"
+
+
+
+function minMax(arr) {
+  return {
+    min: Math.min(...arr),
+    max: Math.max(...arr)
+  };
+}
+console.log(minMax([3, 5, 1, 9, 2])); // { min: 1, max: 9 }
