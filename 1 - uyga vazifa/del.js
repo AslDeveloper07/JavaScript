@@ -285,3 +285,9 @@ function isAnagram(str1, str2) {
   return format(str1) === format(str2);
 }
 console.log(isAnagram("listen", "silent")); // true
+
+
+function flatten(arr) {
+  return arr.flat(Infinity);
+}
+console.log(flatten([1, [2, [3, 4]], 5])); // [1, 2, 3, 4, 5]
