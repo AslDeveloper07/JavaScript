@@ -183,3 +183,40 @@ function isPalindrome(str) {
 }
 console.log(isPalindrome("A man, a plan, a canal, Panama")); // true
 
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+
+
+
+function mostFrequent(arr) {
+  let counts = {};
+  let maxCount = 0, result = null;
+
+  for (let item of arr) {
+    counts[item] = (counts[item] || 0) + 1;
+    if (counts[item] > maxCount) {
+      maxCount = counts[item];
+      result = item;
+    }
+  }
+  return result;
+}
+console.log(mostFrequent([1, 3, 1, 3, 2, 1])); // 1
+
+
+
+function reverseWords(str) {
+  return str.split(' ').reverse().join(' ');
+}
+console.log(reverseWords("JavaScript is awesome")); // "awesome is JavaScript"
+
+
+
+function fibonacci(n) {
+  if (n < 2) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+console.log(fibonacci(6)); // 8
