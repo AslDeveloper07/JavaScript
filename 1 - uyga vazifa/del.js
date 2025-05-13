@@ -304,3 +304,19 @@ function reverseString(str) {
   return str.split('').reverse().join('');
 }
 console.log(reverseString("javascript")); // "tpircsavaj"
+
+
+
+function shiftLetters(str) {
+  return str.split('').map(char => {
+    if (/[a-z]/i.test(char)) {
+      let code = char.charCodeAt(0) + 1;
+      if ((char <= 'z' && code > 122) || (char <= 'Z' && code > 90)) {
+        code -= 26;
+      }
+      return String.fromCharCode(code);
+    }
+    return char;
+  }).join('');
+}
+console.log(shiftLetters("abc xyz")); // "bcd yza"
