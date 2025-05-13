@@ -291,3 +291,10 @@ function flatten(arr) {
   return arr.flat(Infinity);
 }
 console.log(flatten([1, [2, [3, 4]], 5])); // [1, 2, 3, 4, 5]
+
+
+
+function digitSum(n) {
+  return n.toString().split('').reduce((sum, d) => sum + parseInt(d), 0);
+}
+console.log(digitSum(12345)); // 15
