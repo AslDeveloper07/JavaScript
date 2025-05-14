@@ -81,9 +81,9 @@ const {
     },
   ],
   loginHistory: [
-    { date:dateNumber, location:loginLocation },
-    { date:dateNumbers, location:loginLocations }
-],
+    { date: dateNumber, location: loginLocationOne },
+    { date: dateNumbers, location: loginLocationTwo },
+  ],
   getSkillNames,
   addSkill,
 } = userProfile;
