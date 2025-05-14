@@ -51,6 +51,8 @@ const userProfile = {
 };
 
 // Distructure in JavaScript
+
+
 const {
   id,
   name: { first, last, getFullName },
