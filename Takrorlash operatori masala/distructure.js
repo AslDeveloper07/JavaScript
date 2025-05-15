@@ -1,160 +1,160 @@
-const userProfile = {
-  id: 10245,
-  name: {
-    first: "Ali",
-    last: "Karimov",
-    getFullName() {
-      return `${this.first} ${this.last}`;
-    },
-  },
-  contact: {
-    email: "ali.karimov@example.com",
-    phone: "+998901234567",
-    address: {
-      country: "Uzbekistan",
-      city: "Tashkent",
-      street: "Buyuk Ipak Yo'li",
-      zipCode: 100100,
-    },
-  },
-  isActive: true,
-  skills: [
-    { name: "HTML", level: "advanced" },
-    { name: "CSS", level: "advanced" },
-    { name: "JavaScript", level: "intermediate" },
-    { name: "Node.js", level: "beginner" },
-  ],
-  projects: [
-    {
-      title: "Portfolio Website",
-      year: 2024,
-      technologies: ["HTML", "CSS", "JavaScript"],
-      completed: true,
-    },
-    {
-      title: "To-Do App",
-      year: 2025,
-      technologies: ["React", "Tailwind CSS"],
-      completed: false,
-    },
-  ],
-  loginHistory: [
-    { date: "2025-05-01", location: "Tashkent" },
-    { date: "2025-05-10", location: "Samarkand" },
-  ],
-  getSkillNames() {
-    return this.skills.map((skill) => skill.name).join(", ");
-  },
-  addSkill(skillName, level) {
-    this.skills.push({ name: skillName, level });
-  },
-};
+// const userProfile = {
+//   id: 10245,
+//   name: {
+//     first: "Ali",
+//     last: "Karimov",
+//     getFullName() {
+//       return `${this.first} ${this.last}`;
+//     },
+//   },
+//   contact: {
+//     email: "ali.karimov@example.com",
+//     phone: "+998901234567",
+//     address: {
+//       country: "Uzbekistan",
+//       city: "Tashkent",
+//       street: "Buyuk Ipak Yo'li",
+//       zipCode: 100100,
+//     },
+//   },
+//   isActive: true,
+//   skills: [
+//     { name: "HTML", level: "advanced" },
+//     { name: "CSS", level: "advanced" },
+//     { name: "JavaScript", level: "intermediate" },
+//     { name: "Node.js", level: "beginner" },
+//   ],
+//   projects: [
+//     {
+//       title: "Portfolio Website",
+//       year: 2024,
+//       technologies: ["HTML", "CSS", "JavaScript"],
+//       completed: true,
+//     },
+//     {
+//       title: "To-Do App",
+//       year: 2025,
+//       technologies: ["React", "Tailwind CSS"],
+//       completed: false,
+//     },
+//   ],
+//   loginHistory: [
+//     { date: "2025-05-01", location: "Tashkent" },
+//     { date: "2025-05-10", location: "Samarkand" },
+//   ],
+//   getSkillNames() {
+//     return this.skills.map((skill) => skill.name).join(", ");
+//   },
+//   addSkill(skillName, level) {
+//     this.skills.push({ name: skillName, level });
+//   },
+// };
 
-// Distructure in JavaScript
+// // Distructure in JavaScript
 
-const {
-  id: userId,
-  name: userName,
-  contact: userContact,
-  isActive: userIsActive,
-  skills: userSkills,
-  projects: userProjects,
-  loginHistory: userLoginHistory,
-  getSkillNames,
-  addSkill,
-} = userProfile;
+// const {
+//   id: useId,
+//   name: userName,
+//   contact: userContact,
+//   isActive: userIsActive,
+//   skills: userSkills,
+//   projects: userProjects,
+//   loginHistory: userLoginHistory,
+//   getSkillNames,
+//   addSkill,
+// } = userProfile;
 
-const {
-  first: userFirstName,
-  last: userLastName,
-  getFullName: getUserFullName,
-} = userName;
+// const {
+//   first: userFirstName,
+//   last: userLastName,
+//   getFullName: getUserFullName,
+// } = userName;
 
-const {
-  email: userEmail,
-  phone: userPhone,
-  address: userAddress,
-} = userContact;
+// const {
+//   email: userEmail,
+//   phone: userPhone,
+//   address: userAddress,
+// } = userContact;
 
-const {
-  country: userCountry,
-  city: userCity,
-  street: userStreet,
-  zipCode: userZipCode,
-} = userAddress;
+// const {
+//   country,
+//   city,
+//   street,
+//   zipCode,
+// } = userAddress;
 
-const [htmlSkill, cssSkill, jsSkill, nodeSkill] = userSkills;
+// const [htmlSkill, cssSkill, jsSkill, nodeSkill] = userSkills;
 
-const {
-  name: htmlSkillName,
-  level: htmlSkillLevel,
-} = htmlSkill;
-const {
-  name: cssSkillName,
-  level: cssSkillLevel,
-} = cssSkill;
-const {
-  name: jsSkillName,
-  level: jsSkillLevel,
-} = jsSkill;
-const {
-  name: nodeSkillName,
-  level: nodeSkillLevel,
-} = nodeSkill;
+// const {
+//   name,
+//   level,
+// } = htmlSkill;
+// const {
+//   name: cssSkillName,
+//   level: cssSkillLevel,
+// } = cssSkill;
+// const {
+//   name: jsSkillName,
+//   level: jsSkillLevel,
+// } = jsSkill;
+// const {
+//   name: nodeSkillName,
+//   level: nodeSkillLevel,
+// } = nodeSkill;
 
-const [projectOne, projectTwo] = userProjects;
+// const [projectOne, projectTwo] = userProjects;
 
-const {
-  title: projectOneTitle,
-  year: projectOneYear,
-  technologies: projectOneTechs,
-  completed: projectOneCompleted,
-} = projectOne;
+// const {
+//   title: projectOneTitle,
+//   year: projectOneYear,
+//   technologies: projectOneTechs,
+//   completed: projectOneCompleted,
+// } = projectOne;
 
-const {
-  title,
-  year,
-  technologies,
-  completed,
-} = projectTwo;
+// const {
+//   title,
+//   year,
+//   technologies,
+//   completed,
+// } = projectTwo;
 
-const [login1, login2] = userLoginHistory;
-const { date: login1Date, location: login1Location } = login1;
-const { date: login2Date, location: login2Location } = login2;
+// const [login1, login2] = userLoginHistory;
+// const { date: login1Date, location: login1Location } = login1;
+// const { date: login2Date, location: login2Location } = login2;
 
-// ishlatish
+// // ishlatish
 
-console.log(userId);
-console.log(userFirstName);
-console.log(userLastName);
-console.log(getUserFullName());
-console.log(userIsActive);
-console.log(userEmail);
-console.log(userPhone);
-console.log(userCountry);
-console.log(userCity);
-console.log(userStreet);
-console.log(userZipCode);
-console.log(htmlSkillName);
-console.log(htmlSkillLevel);
-console.log(cssSkillName);
-console.log(cssSkillLevel);
-console.log(jsSkillName);
-console.log(jsSkillLevel);
-console.log(nodeSkillName);
-console.log(nodeSkillLevel);
-console.log(projectOneTitle);
-console.log(projectOneYear);
-console.log(projectOneTechs);
-console.log(projectOneCompleted);
-console.log(title);
-console.log(year);
-console.log(technologies);
-console.log(completed);
-console.log(login1Date);
-console.log(login1Location);
-console.log(login2Date);
-console.log(login2Location);
+// console.log(useId);
+// console.log(userFirstName);
+// console.log(userLastName);
+// console.log(getUserFullName());
+// console.log(userIsActive);
+// console.log(userEmail);
+// console.log(userPhone);
+// console.log(country);
+// console.log(city);
+// console.log(street);
+// console.log(zipCode);
+// console.log(name);
+// console.log(level);
+// console.log(cssSkillName);
+// console.log(cssSkillLevel);
+// console.log(jsSkillName);
+// console.log(jsSkillLevel);
+// console.log(nodeSkillName);
+// console.log(nodeSkillLevel);
+// console.log(projectOneTitle);
+// console.log(projectOneYear);
+// console.log(projectOneTechs);
+// console.log(projectOneCompleted);
+// console.log(title);
+// console.log(year);
+// console.log(technologies);
+// console.log(completed);
+// console.log(login1Date);
+// console.log(login1Location);
+// console.log(login2Date);
+// console.log(login2Location);
 
 
 
