@@ -64,4 +64,16 @@ const {
   addSkill,
 } = userProfile;
 const {address,email,phone} = contact;
+
+// ishlatish
 console.log(address);
+console.log(projects);
+console.log(loginHistory);
+console.log(getSkillNames);
+console.log(addSkill);
+
+
+
+
+
+
