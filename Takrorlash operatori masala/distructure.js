@@ -52,40 +52,16 @@ const userProfile = {
 
 // Distructure in JavaScript
 
-
 const {
   id,
-  name: { first, last, getFullName },
-  contact: {
-    email,
-    phone,
-    address: { country, city, street, zipCode },
-  },
+  name,
+  contact,
   isActive,
-  skills: [
-    { name: html, level: advanced },
-    { name: css, level: advanceds },
-    { name: javaScript, level: beginner },
-    { name: nodeJs, level: multiLevel },
-  ],
-  projects: [
-    {
-      title: titleName,
-      year: yearOne,
-      technologies: devLanguage,
-      completed: complatedTrue,
-    },
-    {
-      title: titleNames,
-      year: yearTwo,
-      technologies: programLanguage,
-      completed: complatedFalse,
-    },
-  ],
-  loginHistory: [
-    { date: dateNumber, location: loginLocationOne },
-    { date: dateNumbers, location: loginLocationTwo },
-  ],
+  skills,
+  projects,
+  loginHistory,
   getSkillNames,
   addSkill,
 } = userProfile;
+const {address,email,phone} = contact;
+console.log(address);
