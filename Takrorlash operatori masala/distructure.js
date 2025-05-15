@@ -132,3 +132,47 @@ const [deepString, deepNumber] = deepNestedArray;
 
 // func objectniki
 const { calculate, description } = functionObject;
+
+
+// console.log ga chaqirish
+
+console.log(string);
+console.log(number);
+console.log(boolean);
+console.log(nul);
+console.log(undefineded);
+console.log(user);
+console.log(nestedArray);
+console.log(sumFunction);
+console.log(functionObject);
+
+console.log(id);
+console.log(name);
+console.log(age);
+console.log(isStudent);
+console.log(hobbies);
+console.log(address);
+
+console.log(hobby1);
+console.log(hobby2);
+console.log(hobby3);
+console.log(type);
+console.log(sportName);
+
+console.log(country);
+console.log(city);
+console.log(zip);
+
+console.log(nestedString);
+console.log(nestedNumber);
+console.log(deepArray);
+console.log(deepBoolean);
+console.log(deepNull);
+console.log(deepNestedArray);
+console.log(deepString);
+console.log(deepNumber);
+
+console.log(calculate);
+console.log(description);
+
+
