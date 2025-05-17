@@ -351,4 +351,18 @@ function countChars(str) {
 
 console.log(countChars("AbC123xyz"));
 
+// const arr1 = [1, 2, 3];
+// const arr2 = [1, 2, 3];
+// // ES6 dan oldin
+// const combined = arr1.concat(arr2);
 
+function sum(a, b, c) {
+  return a + b + c;
+}
+const numbers = [1, 2, 3];
+const result = sum.apply(null, numbers);
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+// ES6 dan oldin:
+const combined = Object.assign({}, obj1, obj2);

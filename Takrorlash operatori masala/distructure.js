@@ -122,6 +122,8 @@
 // const { date: login1Date, location: login1Location } = login1;
 // const { date: login2Date, location: login2Location } = login2;
 
+
+
 // // ishlatish
 
 // console.log(useId);
@@ -155,35 +157,6 @@
 // console.log(login1Location);
 // console.log(login2Date);
 // console.log(login2Location);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -255,7 +228,8 @@
 
 // // func objectniki
 // const { calculate, description } = functionObject;
-
+// const {calculates,descriptions}=functionObject  //uchiriladi
+// const { countrys, citys, zips } = address; //uchiriladi
 
 // // console.log ga chaqirish
 
@@ -294,8 +268,4 @@
 // console.log(deepNestedArray);
 // console.log(deepString);
 // console.log(deepNumber);
-
-// console.log(calculate);
-// console.log(description);
-
 
