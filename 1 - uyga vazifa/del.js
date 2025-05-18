@@ -373,7 +373,6 @@
 // const combined = [...arr1, ...arr2];
 // console.log(combined);
 
-
 // function  sum(a,b,c){
 //   return a+b+c
 // }
@@ -381,7 +380,6 @@
 // const numbers=[1,2,3]
 // const result=sum(...numbers)
 // console.log(result);
-
 
 // const fruits=["apple","banana","cherry"]
 // const vegetable=["carrot","patato", "onions"]
@@ -401,7 +399,67 @@
 // const newSettings={...settings,layout:{...settings.layout, sidebar:false}}
 // console.log(newSettings);
 
+// // Massivlarda rest pattern
+// const fruits=["apple", "banana", "cherry", "grape"]
+// const [first,second, ...restFruits]=fruits
 
-// Massivlarda rest pattern
-const fruits=["apple", "banana", "cherry", "grape"]
-const [first,second, ]
+// console.log(first);
+// console.log(second);
+// console.log(restFruits);
+
+// // Objectlarda restPattern
+// const user={name:"Asilbek", age: 17, country:"Uzbekistan"}
+// const{name, ...restDetails}=user
+
+// console.log(name);
+// console.log(restDetails);
+
+// function sum(...numbers) {
+//   return numbers.reduce((total, num) => total + num, 0);
+// }
+
+// console.log(sum(1, 2, 3));
+// console.log(sum(4, 5, 6, 7, 8));
+
+// function sum(...theArgs) {
+//   let total = 0;
+//   for (const arg of theArgs) {
+//     total + arg;
+//   }
+//   return total;
+// }
+
+// console.log(sum(1, 2, 3));
+
+// function multiplay(multiplayer, ...theArgs) {
+//   return theArgs.map((element) => multiplayer * element);
+// }
+// const arr = multiplay(2, 3, 4, 76, 87);
+// console.log(arr);
+
+// function sortRestArgs(...theArgs) {
+//   const sortedArgs = theArgs.sort();
+//   return sortRestArgs;
+// }
+
+// console.log(sortRestArgs(2, 3, 4, 78, 9));
+
+// function sortArgument() {
+//   const sortedArgs = arguments.sort();
+//   return sortedArgs; //this will never happen
+// }
+
+// console.log(sortArgument(2, 3, 4, 78, 9));
+
+// const name =null
+// const defaultName="Guest"
+
+// const userName=name??defaultName
+
+// console.log(userName);5 
+
+const num = 0;
+const unNum = 18;
+
+const userAge = num ?? unNum;
+console.log(userAge);
