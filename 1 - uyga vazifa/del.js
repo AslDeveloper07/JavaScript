@@ -510,3 +510,46 @@
 
 // let theme = emptyUser.settings?.theme ?? "light";
 // console.log(theme); // "light"
+
+const users = [
+  {
+    id: 1,
+    name: "Sardor",
+    settings: {
+      theme: "dark",
+      notifications: {
+        email: true,
+        sms: false,
+      },
+    },
+  },
+  {
+    id: 2,
+    name: "Ali",
+    settings: {
+      notifications: {
+        sms: true,
+      },
+    },
+  },
+  {
+    id: 3,
+    name: "Vali",
+    // settings mavjud emas
+  },
+];
+
+const userData = users.map(man => {
+  return {
+    ...man,
+    settings: {
+      theme: man.settings?.theme ?? "light",
+      notifications: {
+        email: man.settings?.notifications?.email ?? false,
+        sms: man.settings?.notifications?.sms ?? false,
+      },
+    },
+  };
+});
+
+console.log(userData);
