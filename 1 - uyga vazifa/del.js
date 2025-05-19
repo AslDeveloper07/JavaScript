@@ -364,7 +364,7 @@
 
 // const obj1 = { a: 1, b: 2 };
 // const obj2 = { c: 3, d: 4 };
-// // ES6 dan oldin:
+// ES6 dan oldin:
 // const combined = Object.assign({}, obj1, obj2);
 
 // const arr1 = [1, 2, 3];
@@ -373,43 +373,46 @@
 // const combined = [...arr1, ...arr2];
 // console.log(combined);
 
-// function  sum(a,b,c){
-//   return a+b+c
+// function sum(a, b, c) {
+//   return a + b + c;
 // }
 
-// const numbers=[1,2,3]
-// const result=sum(...numbers)
+// const numbers = [1, 2, 3];
+// const result = sum(...numbers);
 // console.log(result);
 
-// const fruits=["apple","banana","cherry"]
-// const vegetable=["carrot","patato", "onions"]
+// const fruits = ["apple", "banana", "cherry"];
+// const vegetable = ["carrot", "patato", "onions"];
 
-// const combined=[...fruits,"mango",...vegetable]
+// const combined = [...fruits, "mango", ...vegetable];
 
 // console.log(combined);
 
-// function multiplay(a,b,c){
-//   return a*b*c
+// function multiplay(a, b, c) {
+//   return a * b * c;
 // }
 
-// const nums=[1,2,3]
+// const nums = [1, 2, 3];
 // console.log(multiplay(...nums));
 
-// const settings={theme:"dark",layout:{sidebar:true}}
-// const newSettings={...settings,layout:{...settings.layout, sidebar:false}}
+// const settings = { theme: "dark", layout: { sidebar: true } };
+// const newSettings = {
+//   ...settings,
+//   layout: { ...settings.layout, sidebar: false },
+// };
 // console.log(newSettings);
 
-// // Massivlarda rest pattern
-// const fruits=["apple", "banana", "cherry", "grape"]
-// const [first,second, ...restFruits]=fruits
+// Massivlarda rest pattern
+// const fruits = ["apple", "banana", "cherry", "grape"];
+// const [first, second, ...restFruits] = fruits;
 
 // console.log(first);
 // console.log(second);
 // console.log(restFruits);
 
 // // Objectlarda restPattern
-// const user={name:"Asilbek", age: 17, country:"Uzbekistan"}
-// const{name, ...restDetails}=user
+// const user = { name: "Asilbek", age: 17, country: "Uzbekistan" };
+// const { name, ...restDetails } = user;
 
 // console.log(name);
 // console.log(restDetails);
@@ -451,15 +454,59 @@
 
 // console.log(sortArgument(2, 3, 4, 78, 9));
 
-// const name =null
-// const defaultName="Guest"
+// // const name = null;
+// const defaultName = "Guest";
 
-// const userName=name??defaultName
+// const userName = name ?? defaultName;
 
-// console.log(userName);5 
+// console.log(userName);
+// 5;
 
-const num = 0;
-const unNum = 18;
+// const num = 0;
+// const unNum = 18;
 
-const userAge = num ?? unNum;
-console.log(userAge);
+// const userAge = num ?? unNum;
+// console.log(userAge);
+
+// javascript
+// CopyEdit
+// obj?.property
+// obj?.[property]
+// obj?.method()
+
+// let user = {
+//   name: "Ali",
+//   address: {
+//     city: "Toshkent"
+//   }
+// };
+
+// console.log(user.address?.city); // "Toshkent"
+// console.log(user.contact?.phone); // undefined (xato chiqmaydi)
+
+// let users = [];
+
+// console.log(users[0]?.name); // undefined
+
+// let user = {
+//   sayHi: () => console.log("Salom!"),
+// };
+
+// user.sayHi?.(); // Salom!
+// user.sayBye?.(); // hech nima bo‘lmaydi, xato ham chiqmaydi
+
+// let user = {
+//   profile: {
+//     settings: {
+//       theme: "dark",
+//     },
+//   },
+// };
+
+// console.log(user?.profile?.settings?.theme); // "dark"
+// console.log(user?.profile?.preferences?.color); // undefined
+
+// let emptyUser = {};
+
+// let theme = emptyUser.settings?.theme ?? "light";
+// console.log(theme); // "light"
