@@ -511,45 +511,128 @@
 // let theme = emptyUser.settings?.theme ?? "light";
 // console.log(theme); // "light"
 
-const users = [
+// const users = [
+//   {
+//     id: 1,
+//     name: "Sardor",
+//     settings: {
+//       theme: "dark",
+//       notifications: {
+//         email: true,
+//         sms: false,
+//       },
+//     },
+//   },
+//   {
+//     id: 2,
+//     name: "Ali",
+//     settings: {
+//       notifications: {
+//         sms: true,
+//       },
+//     },
+//   },
+//   {
+//     id: 3,
+//     name: "Vali",
+//   },
+// ];
+
+// const userData = users.map(man => {
+//   return {
+//     ...man,
+//     settings: {
+//       theme: man.settings?.theme ?? "light",
+//       notifications: {
+//         email: man.settings?.notifications?.email ?? false,
+//         sms: man.settings?.notifications?.sms ?? false,
+//       },
+//     },
+//   };
+// });
+
+// console.log(userData);
+
+// const products = [
+//   {
+//     id: 1,
+//     name: "Laptop",
+//     config: {
+//       cpu: "Intel i7",
+//       ram: "16GB",
+//       extras: {
+//         warranty: true,
+//         bag: false,
+//       },
+//     },
+//   },
+//   {
+//     id: 2,
+//     name: "Tablet",
+//     config: {
+//       extras: {
+//         bag: true,
+//       },
+//     },
+//   },
+//   {
+//     id: 3,
+//     name: "Monitor",
+//     // config yo'q
+//   },
+// ];
+
+// const laptopManager = products.map((laptop) => ({
+//   ...laptop,
+//   config: {
+//     cpu: laptop.config?.cpu ?? "intel i7 14000HK",
+//     ram: laptop.config?.ram ?? "32GB",
+//     extras: {
+//       warranty: laptop.config?.extras?.warranty ?? false,
+//       bag: laptop.config?.extras?.bag ?? false,
+//     },
+//   },
+// }));
+
+// console.log(laptopManager);
+
+const books = [
   {
     id: 1,
-    name: "Sardor",
-    settings: {
-      theme: "dark",
-      notifications: {
-        email: true,
-        sms: false,
+    title: "JavaScript Basics",
+    details: {
+      author: "John Doe",
+      publish: {
+        year: 2020,
+        country: "USA",
       },
     },
   },
   {
     id: 2,
-    name: "Ali",
-    settings: {
-      notifications: {
-        sms: true,
+    title: "Learning CSS",
+    details: {
+      publish: {
+        country: "UK",
       },
     },
   },
   {
     id: 3,
-    name: "Vali",
-    // settings mavjud emas
+    title: "HTML5 Guide",
+    // details mavjud emas
   },
 ];
 
-const userData = users.map(man => {
-  return {
-    ...man,
-    settings: {
-      theme: man.settings?.theme ?? "light",
-      notifications: {
-        email: man.settings?.notifications?.email ?? false,
-        sms: man.settings?.notifications?.sms ?? false,
-      },
-    },
-  };
-});
+const bookers = books.map((book) => ({
+  ...book,
+  details: {
+    author: book.details?.author ?? "Unknown author",
+  },
+  publish: {
+    year: book.publish?.year ?? 2000,
+    country: book.publish?.country ?? "unknown",
+  },
+}));
 
-console.log(userData);
+console.log(bookers);
