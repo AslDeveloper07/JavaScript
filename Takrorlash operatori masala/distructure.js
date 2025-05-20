@@ -122,8 +122,6 @@
 // const { date: login1Date, location: login1Location } = login1;
 // const { date: login2Date, location: login2Location } = login2;
 
-
-
 // // ishlatish
 
 // console.log(useId);
@@ -157,16 +155,6 @@
 // console.log(login1Location);
 // console.log(login2Date);
 // console.log(login2Location);
-
-
-
-
-
-
-
-
-
-
 
 // // uyga vazifa arrayni distructuring qilish
 
@@ -269,3 +257,16 @@
 // console.log(deepString);
 // console.log(deepNumber);
 
+// const element = document.getElementById("elementID");
+// element.innerHTML = `<h1>hello world</h1>`;
+
+// const clickBtn = () => {
+//   console.log("sichqoncha 2 marta bosilganda men chiqdim");
+// };
+// const btn = document.getElementById("btn");
+// btn.addEventListener("dblclick", clickBtn);
+
+// document.addEventListener("keydown", (event) => {
+//   console.log("key" + event.key);
+//   console.log("code" + event.code);
+// });

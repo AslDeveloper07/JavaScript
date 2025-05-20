@@ -633,6 +633,8 @@ const bookers = books.map((book) => ({
     year: book.publish?.year ?? 2000,
     country: book.publish?.country ?? "unknown",
   },
+
 }));
+
 
 console.log(bookers);
