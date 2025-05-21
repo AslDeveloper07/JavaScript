@@ -270,3 +270,55 @@
 //   console.log("key" + event.key);
 //   console.log("code" + event.code);
 // });
+
+// let text = "Hello, world!";
+// let result = text.indexOf("orld");
+// console.log(result);  // 7
+
+
+// let text = "Hello, world! Hello!";
+// let result = text.indexOf("Hello", 5);
+// console.log(result);  // 13
+
+
+// let text = "Hello, world! Hello!";
+// let result = text.lastIndexOf("Hello");
+// console.log(result);  // 13
+
+// let numbers = [1, 2, 3, 4, 5];
+// let found = numbers.find(num => num < 3);
+
+// // console.log(found); // 4 (birinchi element shartga mos keladi)
+// let users = [
+//   { id: 1, name: "Ali" },
+//   { id: 2, name: "Olim" },
+//   { id: 3, name: "Tayir" }
+// ];
+// let foundUser = users.find(user => user.id === 2);
+
+// console.log(foundUser); // { id: 2, name: "Olim" }
+// let numbers = [1, 2, 3, 4];
+// let doubled = numbers.map(num => num * 2);
+
+// console.log(doubled); // [2, 4, 6, 8]
+// let users = [
+//   { id: 1, name: "Ali" },
+//   { id: 2, name: "Olim" },
+//   { id: 3, name: "Tayir" }
+// ];
+// let userNames = users.map(user => user);
+
+// console.log(userNames); // ["Ali", "Olim", "Tayir"]
+// let numbers = [1, 2, 3, 4, 5];
+// let evenNumbers = numbers.filter(num => num % 2 === 0);
+
+// console.log(evenNumbers); // [2, 4]
+// let users = [
+//   { id: 1, name: "Ali", age: 25 },
+//   { id: 2, name: "Olim", age: 18 },
+//   { id: 3, name: "Tayir", age: 30 }
+// ];
+// let adults = users.filter(user => user.age >= 21);
+
+// console.log(adults);
+// // [{ id: 1, name: "Ali", age: 25 }, { id: 3, name: "Tayir", age: 30 }]
