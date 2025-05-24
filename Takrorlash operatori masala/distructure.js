@@ -275,11 +275,9 @@
 // let result = text.indexOf("orld");
 // console.log(result);  // 7
 
-
 // let text = "Hello, world! Hello!";
 // let result = text.indexOf("Hello", 5);
 // console.log(result);  // 13
-
 
 // let text = "Hello, world! Hello!";
 // let result = text.lastIndexOf("Hello");
@@ -322,3 +320,82 @@
 
 // console.log(adults);
 // // [{ id: 1, name: "Ali", age: 25 }, { id: 3, name: "Tayir", age: 30 }]
+
+// const locations = [
+//     { country: "Uzbekistan", city: "Tashkent" },
+//     { country: "Uzbekistan", city: "Samarkand" },
+//     { country: "Uzbekistan", city: "Tashkent" },
+//     { country: "USA", city: "New York" },
+//     { country: "USA", city: "Chicago" },
+//   ];
+
+//   // 1. Set orqali dublikatlarni olib tashlaymiz
+//   const uniqueSet = new Set(
+//     locations.map(lokatsiya => `${lokatsiya.country}-${lokatsiya.city}`)
+//   );
+
+//   // 2. Setdan massivga qayta obyekt holatida o‘tkazamiz
+//   const uniqueLocations = Array.from(uniqueSet).map(str => {
+//     const [country, city] = str.split("-");
+//     return { country, city };
+//   });
+
+//   console.log(uniqueLocations);
+
+// const reactions = [
+//     { user: "Ali", postId: 1 },
+//     { user: "Vali", postId: 1 },
+//     { user: "Ali", postId: 2 },
+//     { user: "Sami", postId: 1 },
+//     { user: "Ali", postId: 1 },
+//   ];
+
+//   const reaction = new Set(
+//     reactions.map((react) => `${react.user}-${react.postId}`)
+//   );
+
+//   const reaksiya = Array.from(reaction).map((reaksiyaa) => {
+//     const [user, postId] = reaksiyaa.split("-");
+//     return { user, postId: Number(postId) };
+//   });
+
+//   console.log(reaksiya);
+
+// const locations = [
+//   { country: "Uzbekistan", city: "Tashkent" },
+//   { country: "Uzbekistan", city: "Samarkand" },
+//   { country: "Uzbekistan", city: "Tashkent" },
+//   { country: "USA", city: "New York" },
+//   { country: "USA", city: "Chicago" },
+// ];
+
+// const locationMap = new Map();
+
+// locations.forEach(({ country, city }) => {
+//   //   console.log(country, city);
+//   if (!locationMap.has(country)) {
+//     locationMap.set(country, new Set());
+//   }
+//   locationMap.get(country).add(city);
+// });
+
+// console.log(locationMap);
+
+const reactions = [
+  { user: "Ali", postId: 1 },
+  { user: "Vali", postId: 1 },
+  { user: "Ali", postId: 2 },
+  { user: "Sami", postId: 1 },
+  { user: "Ali", postId: 1 },
+];
+
+const reactionsMap = new Map();
+
+reactions.forEach(({ user, postId }) => {
+  if (!reactionsMap.has(user)) {
+    reactionsMap.set(user, new Set());
+  }
+  reactionsMap.get(user).add(postId);
+});
+
+console.log(reactionsMap);
