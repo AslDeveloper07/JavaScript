@@ -123,8 +123,6 @@
 //   i++;
 // } while (i <= 9);
 
-
-
 //================================================================================== 6 - MASALA
 
 // let price = 15000;
@@ -310,5 +308,29 @@
 
 // console.log("Yig'indi S =", S.toFixed(4));
 
+// Orginali
+function Car(make, speed) {
+  this.make = make;
+  this.speed = speed;
+  this.accelerate = function () {
+    console.log(`${this.make} tezligi ${(this.speed += 10)}km/h ga oshdi.`);
+  };
+  this.brake = function () {
+    console.log(`${this.make} tezligi ${(this.speed -= 5)}km / h ga kamaydi.`);
+  };
+}
 
+let car1 = new Car("BMW", 120);
+let car2 = new Car("Mercedes", 95);
 
+//Protatypega ugirilgani
+
+function Car(make, speed) {
+  this.make = make;
+  this.speed = speed;
+}
+
+Car.prototype.speed = function () {
+    console.log(`${this.make} tezligi ${(this.speed)} km/h oshdi`);
+
+};
