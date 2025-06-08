@@ -442,6 +442,6 @@
 // let specificDate = new Date('2025-02-06T16:00:00');
 // console.log(specificDate);
 
-let customDate = new Date(2020, 1, 7);
-console.log(customDate);
+// let customDate = new Date(2020, 1, 7);
+// console.log(customDate);
 
