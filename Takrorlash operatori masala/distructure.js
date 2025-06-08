@@ -381,21 +381,21 @@
 
 // console.log(locationMap);
 
-const reactions = [
-  { user: "Ali", postId: 1 },
-  { user: "Vali", postId: 1 },
-  { user: "Ali", postId: 2 },
-  { user: "Sami", postId: 1 },
-  { user: "Ali", postId: 1 },
-];
+// const reactions = [
+//   { user: "Ali", postId: 1 },
+//   { user: "Vali", postId: 1 },
+//   { user: "Ali", postId: 2 },
+//   { user: "Sami", postId: 1 },
+//   { user: "Ali", postId: 1 },
+// ];
 
-const reactionsMap = new Map();
+// const reactionsMap = new Map();
 
-reactions.forEach(({ user, postId }) => {
-  if (!reactionsMap.has(user)) {
-    reactionsMap.set(user, new Set());
-  }
-  reactionsMap.get(user).add(postId);
-});
+// reactions.forEach(({ user, postId }) => {
+//   if (!reactionsMap.has(user)) {
+//     reactionsMap.set(user, new Set());
+//   }
+//   reactionsMap.get(user).add(postId);
+// });
 
-console.log(reactionsMap);
+// console.log(reactionsMap);
