@@ -484,14 +484,35 @@
 
 // console.log(timeFormat, timeFormat24);
 
+// const user = {
+//   names: "Asilbek",
+//   firstName: "Suvonov",
+//   age: 17,
+//   greet: function () {
+//     console.log(
+//       `salom mening ismim ${this.names}, familiyam esa ${this.firstName} va yoshim ${this.age}`
+//     );
+//   },
+// };
+// user.greet();7
 
-const user={
-    names: "Asilbek",
-    firstName: "Suvonov",
-    age: 17,
-    greet: function(){
-        console.log(`salom mening ismim ${this.names}, familiyam esa ${this.firstName} va yoshim ${this.age}`);
+function Car(model, year, color) {
+  this.model = model;
+  this.year = year;
+  this.color = color;
 
-    }
+  this.start = function () {
+    console.log(`${this.model} ishlayabdi...`);
+  };
 }
-user.greet()
+
+//obyektlarni yaratish
+let car1 = new Car("Malibu", 2020, "oq");
+let car2 = new Car("Nexia", 2026, "oq");
+
+car1.start();
+car2.start();
+
+console.log(car1.color);
+console.log(car2.year);
+
