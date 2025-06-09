@@ -445,3 +445,5 @@
 // let customDate = new Date(2020, 1, 7);
 // console.log(customDate);
 
+let date = new Date().toLocaleTimeString()
+console.log(date);
