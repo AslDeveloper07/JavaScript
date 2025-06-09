@@ -496,23 +496,99 @@
 // };
 // user.greet();7
 
-function Car(model, year, color) {
-  this.model = model;
-  this.year = year;
-  this.color = color;
+// function Car(model, year, color) {
+//   this.model = model;
+//   this.year = year;
+//   this.color = color;
 
-  this.start = function () {
-    console.log(`${this.model} ishlayabdi...`);
-  };
+//   this.start = function () {
+//     console.log(`${this.model} ishlayabdi...`);
+//   };
+// }
+
+// //obyektlarni yaratish
+// let car1 = new Car("Malibu", 2020, "oq");
+// let car2 = new Car("Nexia", 2026, "oq");
+
+// car1.start();
+// car2.start();
+
+// console.log(car1.color);
+// console.log(car2.year);
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// const person1 = new Person("Asilbek", 17);
+// console.log(person1);
+
+// console.log(Person.prototype);
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// Person.prototype.greet = function () {
+//   console.log(`Salom mening ismim ${this.name}, yoshim ${this.age}`);
+// };
+// const person1 = new Person("Asilbek", 17);
+// const person2 = new Person("Azizbek", 15);
+
+// person1.greet();
+// person2.greet();
+
+
+
+
+
+
+// function Car(make, speed) {
+//   this.make = make;
+//   this.speed = speed;
+//   this.accelerate = function () {
+//     console.log(`${this.make} tezligi ${this.speed += 10} km / h ga oshdi `);
+//   };
+//   this.break = function () {
+//     console.log(`${this.make} tezligi ${this.speed -= 5} km / h ga kamaydi`);
+//   };
+// }
+
+// let car1 = new Car(`BMW`, 120);
+// let car2 = new Car(`Mercedes`, 200);
+
+// car1.accelerate()
+// car2.accelerate()
+
+// car1.break()
+// car2.break()
+
+
+
+function Car(make, speed) {
+  this.make = make;
+  this.speed = speed;
 }
 
-//obyektlarni yaratish
-let car1 = new Car("Malibu", 2020, "oq");
-let car2 = new Car("Nexia", 2026, "oq");
+// Prototypelarga metodlarni qo‘shamiz
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(`${this.make} tezligi ${this.speed} km/h ga oshdi`);
+};
 
-car1.start();
-car2.start();
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(`${this.make} tezligi ${this.speed} km/h ga kamaydi`);
+};
 
-console.log(car1.color);
-console.log(car2.year);
+// Ob'ektlar yaratamiz
+let car1 = new Car("BMW", 120);
+let car2 = new Car("Mercedes", 200);
 
+// Metodlarni chaqiramiz
+car1.accelerate(); // BMW tezligi 130 km/h ga oshdi
+car2.accelerate(); // Mercedes tezligi 210 km/h ga oshdi
+car1.brake();      // BMW tezligi 125 km/h ga kamaydi
+car2.brake();      // Mercedes tezligi 205 km/h ga kamaydi
