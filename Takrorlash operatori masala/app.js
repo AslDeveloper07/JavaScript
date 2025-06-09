@@ -445,5 +445,11 @@
 // let customDate = new Date(2020, 1, 7);
 // console.log(customDate);
 
-let date = new Date().toLocaleTimeString()
-console.log(date);
+// let date = new Date().toLocaleTimeString()
+// console.log(date);
+
+// let date = new Date()
+// console.log(date);
+
+// let rusDate = new Intl.DateTimeFormat("ru-RU").format(date);
+// console.log(rusDate);
