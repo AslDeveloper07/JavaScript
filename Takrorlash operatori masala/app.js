@@ -453,3 +453,17 @@
 
 // let rusDate = new Intl.DateTimeFormat("ru-RU").format(date);
 // console.log(rusDate);
+
+// let date = new Date();
+
+// let shortDate = new Intl.DateTimeFormat(
+//   "en-US",
+//   {
+//     year: "numeric",
+//     month: "long",
+//     day: "numeric",
+//   }
+// ).format(date);
+
+// console.log(shortDate);
+
