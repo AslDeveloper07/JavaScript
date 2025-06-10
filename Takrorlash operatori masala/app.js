@@ -484,17 +484,17 @@
 
 // console.log(timeFormat, timeFormat24);
 
-// const user = {
-//   names: "Asilbek",
-//   firstName: "Suvonov",
-//   age: 17,
-//   greet: function () {
-//     console.log(
-//       `salom mening ismim ${this.names}, familiyam esa ${this.firstName} va yoshim ${this.age}`
-//     );
-//   },
-// };
-// user.greet();7
+const user = {
+  names: "Asilbek",
+  firstName: "Suvonov",
+  age: 17,
+  greet: function () {
+    console.log(
+      `salom mening ismim ${this.names}, familiyam esa ${this.firstName} va yoshim ${this.age}`
+    );
+  },
+};
+user.greet();
 
 // function Car(model, year, color) {
 //   this.model = model;
@@ -588,7 +588,7 @@ let car1 = new Car("BMW", 120);
 let car2 = new Car("Mercedes", 200);
 
 // Metodlarni chaqiramiz
-car1.accelerate(); // BMW tezligi 130 km/h ga oshdi
-car2.accelerate(); // Mercedes tezligi 210 km/h ga oshdi
-car1.brake();      // BMW tezligi 125 km/h ga kamaydi
-car2.brake();      // Mercedes tezligi 205 km/h ga kamaydi
+car1.accelerate();
+car2.accelerate();
+car1.brake();
+car2.brake();
