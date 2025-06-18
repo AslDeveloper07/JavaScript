@@ -782,3 +782,27 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 console.log(capitalize("hello")); // Hello
+
+
+function countPositive(arr) {
+  return arr.filter(n => n > 0).length;
+}
+console.log(countPositive([-1, 3, 5, 0, -2])); // 2
+
+
+function digitSum(n) {
+  return n.toString().split('').reduce((sum, d) => sum + +d, 0);
+}
+console.log(digitSum(1234)); // 10
+
+
+function digitSum(n) {
+  return n.toString().split('').reduce((sum, d) => sum + +d, 0);
+}
+console.log(digitSum(1234)); // 10
+
+
+function hasValue(obj, value) {
+  return Object.values(obj).includes(value);
+}
+console.log(hasValue({a: 1, b: 2}, 2)); // true
