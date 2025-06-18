@@ -812,3 +812,21 @@ function countLetters(str) {
   return str.toLowerCase().replace(/[^a-z]/g, '').length;
 }
 console.log(countLetters("Hello 123!")); // 5
+
+
+
+function mostFrequentChar(str) {
+  let map = {};
+  for (let char of str) {
+    map[char] = (map[char] || 0) + 1;
+  }
+  let maxChar = '', maxCount = 0;
+  for (let char in map) {
+    if (map[char] > maxCount) {
+      maxChar = char;
+      maxCount = map[char];
+    }
+  }
+  return maxChar;
+}
+console.log(mostFrequentChar("hello world")); // l
