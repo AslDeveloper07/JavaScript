@@ -649,3 +649,14 @@ function sumToN(n) {
   return sum;
 }
 console.log(sumToN(10)); // 55
+
+
+function findMax(arr) {
+  return Math.max(...arr);
+}
+console.log(findMax([3, 10, 5, 8])); // 10
+
+function reverseArray(arr) {
+  return arr.reverse();
+}
+console.log(reverseArray([1, 2, 3])); // [3, 2, 1]
