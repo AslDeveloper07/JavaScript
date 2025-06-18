@@ -830,3 +830,15 @@ function mostFrequentChar(str) {
   return maxChar;
 }
 console.log(mostFrequentChar("hello world")); // l
+
+
+function wordCount(str) {
+  return str.trim().split(/\s+/).length;
+}
+console.log(wordCount("Hello world from JavaScript")); // 4
+
+
+function toBinary(n) {
+  return n.toString(2);
+}
+console.log(toBinary(10)); // "1010"
