@@ -693,3 +693,15 @@ function uniqueArray(arr) {
   return [...new Set(arr)];
 }
 console.log(uniqueArray([1, 2, 2, 3, 3, 4])); // [1, 2, 3, 4]
+
+
+function mergeArrays(a, b) {
+  return [...a, ...b];
+}
+console.log(mergeArrays([1, 2], [3, 4])); // [1, 2, 3, 4]
+
+
+function squareElements(arr) {
+  return arr.map(x => x * x);
+}
+console.log(squareElements([2, 3, 4])); // [4, 9, 16]
