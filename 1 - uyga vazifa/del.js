@@ -806,3 +806,9 @@ function hasValue(obj, value) {
   return Object.values(obj).includes(value);
 }
 console.log(hasValue({a: 1, b: 2}, 2)); // true
+
+
+function countLetters(str) {
+  return str.toLowerCase().replace(/[^a-z]/g, '').length;
+}
+console.log(countLetters("Hello 123!")); // 5
