@@ -842,3 +842,10 @@ function toBinary(n) {
   return n.toString(2);
 }
 console.log(toBinary(10)); // "1010"
+
+
+function randomElement(arr) {
+  let index = Math.floor(Math.random() * arr.length);
+  return arr[index];
+}
+console.log(randomElement([10, 20, 30, 40])); // tasodifiy son
