@@ -764,3 +764,21 @@ function findMin(arr) {
 }
 console.log(findMin([4, 1, 9])); // 1
 
+
+
+function removeDuplicates(arr) {
+  return arr.filter((item, index) => arr.indexOf(item) === index);
+}
+console.log(removeDuplicates([1, 2, 2, 3])); // [1, 2, 3]
+
+
+function average(arr) {
+  return arr.reduce((a, b) => a + b, 0) / arr.length;
+}
+console.log(average([10, 20, 30])); // 20
+
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(capitalize("hello")); // Hello
