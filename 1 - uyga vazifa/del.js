@@ -849,3 +849,9 @@ function randomElement(arr) {
   return arr[index];
 }
 console.log(randomElement([10, 20, 30, 40])); // tasodifiy son
+
+
+function sortByLength(arr) {
+  return arr.sort((a, b) => a.length - b.length);
+}
+console.log(sortByLength(["cat", "elephant", "dog"])); // ["cat", "dog", "elephant"]
