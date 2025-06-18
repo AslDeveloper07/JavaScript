@@ -705,3 +705,39 @@ function squareElements(arr) {
   return arr.map(x => x * x);
 }
 console.log(squareElements([2, 3, 4])); // [4, 9, 16]
+
+
+
+function countVowels(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
+}
+console.log(countVowels("education")); // 5
+
+
+function isPrime(n) {
+  if (n <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+console.log(isPrime(7)); // true
+
+
+function extractLetters(str) {
+  return str.replace(/[^a-zA-Z]/g, '');
+}
+console.log(extractLetters("abc123!@#")); // "abc"
+
+
+function includesElement(arr, item) {
+  return arr.includes(item);
+}
+console.log(includesElement([1, 2, 3], 2)); // true
+
+
+function indexMap(arr) {
+  return arr.map((item, index) => `${index}: ${item}`);
+}
+console.log(indexMap(['a', 'b', 'c'])); // ['0: a', '1: b', '2: c']
+
