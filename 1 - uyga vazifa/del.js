@@ -872,3 +872,12 @@ function getPrimes(n) {
   return primes;
 }
 console.log(getPrimes(20)); // [2, 3, 5, 7, 11, 13, 17, 19]
+
+
+function capitalizeWords(str) {
+  return str.split(' ').map(word =>
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  ).join(' ');
+}
+console.log(capitalizeWords("hello world")); // "Hello World"
+
