@@ -596,45 +596,56 @@
 
 // console.log(laptopManager);
 
-const books = [
-  {
-    id: 1,
-    title: "JavaScript Basics",
-    details: {
-      author: "John Doe",
-      publish: {
-        year: 2020,
-        country: "USA",
-      },
-    },
-  },
-  {
-    id: 2,
-    title: "Learning CSS",
-    details: {
-      publish: {
-        country: "UK",
-      },
-    },
-  },
-  {
-    id: 3,
-    title: "HTML5 Guide",
-    // details mavjud emas
-  },
-];
+// const books = [
+//   {
+//     id: 1,
+//     title: "JavaScript Basics",
+//     details: {
+//       author: "John Doe",
+//       publish: {
+//         year: 2020,
+//         country: "USA",
+//       },
+//     },
+//   },
+//   {
+//     id: 2,
+//     title: "Learning CSS",
+//     details: {
+//       publish: {
+//         country: "UK",
+//       },
+//     },
+//   },
+//   {
+//     id: 3,
+//     title: "HTML5 Guide",
+//     // details mavjud emas
+//   },
+// ];
 
-const bookers = books.map((book) => ({
-  ...book,
-  details: {
-    author: book.details?.author ?? "Unknown author",
-  },
-  publish: {
-    year: book.publish?.year ?? 2000,
-    country: book.publish?.country ?? "unknown",
-  },
+// const bookers = books.map((book) => ({
+//   ...book,
+//   details: {
+//     author: book.details?.author ?? "Unknown author",
+//   },
+//   publish: {
+//     year: book.publish?.year ?? 2000,
+//     country: book.publish?.country ?? "unknown",
+//   },
 
-}));
+// }));
 
 
-console.log(bookers);
+// console.log(bookers);
+
+
+
+function sumToN(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+console.log(sumToN(10)); // 55
