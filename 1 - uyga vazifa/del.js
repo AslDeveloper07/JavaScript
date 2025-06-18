@@ -660,3 +660,36 @@ function reverseArray(arr) {
   return arr.reverse();
 }
 console.log(reverseArray([1, 2, 3])); // [3, 2, 1]
+
+
+
+function isPalindrome(str) {
+  let reversed = str.split('').reverse().join('');
+  return str === reversed;
+}
+console.log(isPalindrome("madam")); // true
+
+
+
+function countEven(arr) {
+  return arr.filter(num => num % 2 === 0).length;
+}
+console.log(countEven([1, 2, 3, 4, 6])); // 3
+
+
+
+function fibonacci(n) {
+  let result = [0, 1];
+  for (let i = 2; i < n; i++) {
+    result.push(result[i - 1] + result[i - 2]);
+  }
+  return result.slice(0, n);
+}
+console.log(fibonacci(7)); // [0, 1, 1, 2, 3, 5, 8]
+
+
+
+function uniqueArray(arr) {
+  return [...new Set(arr)];
+}
+console.log(uniqueArray([1, 2, 2, 3, 3, 4])); // [1, 2, 3, 4]
