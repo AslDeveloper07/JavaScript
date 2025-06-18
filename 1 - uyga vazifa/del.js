@@ -741,3 +741,26 @@ function indexMap(arr) {
 }
 console.log(indexMap(['a', 'b', 'c'])); // ['0: a', '1: b', '2: c']
 
+
+function fizzBuzz() {
+  for (let i = 1; i <= 100; i++) {
+    let output = '';
+    if (i % 3 === 0) output += 'Fizz';
+    if (i % 5 === 0) output += 'Buzz';
+    console.log(output || i);
+  }
+}
+fizzBuzz();
+
+
+function stringLength(str) {
+  return str.length;
+}
+console.log(stringLength("JavaScript")); // 10
+
+
+function findMin(arr) {
+  return Math.min(...arr);
+}
+console.log(findMin([4, 1, 9])); // 1
+
