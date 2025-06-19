@@ -636,248 +636,238 @@
 
 // }));
 
-
 // console.log(bookers);
 
+// function sumToN(n) {
+//   let sum = 0;
+//   for (let i = 1; i <= n; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+// console.log(sumToN(10)); // 55
 
+// function findMax(arr) {
+//   return Math.max(...arr);
+// }
+// console.log(findMax([3, 10, 5, 8])); // 10
 
-function sumToN(n) {
-  let sum = 0;
-  for (let i = 1; i <= n; i++) {
-    sum += i;
+// function reverseArray(arr) {
+//   return arr.reverse();
+// }
+// console.log(reverseArray([1, 2, 3])); // [3, 2, 1]
+
+// function isPalindrome(str) {
+//   let reversed = str.split('').reverse().join('');
+//   return str === reversed;
+// }
+// console.log(isPalindrome("madam")); // true
+
+// function countEven(arr) {
+//   return arr.filter(num => num % 2 === 0).length;
+// }
+// console.log(countEven([1, 2, 3, 4, 6])); // 3
+
+// function fibonacci(n) {
+//   let result = [0, 1];
+//   for (let i = 2; i < n; i++) {
+//     result.push(result[i - 1] + result[i - 2]);
+//   }
+//   return result.slice(0, n);
+// }
+// console.log(fibonacci(7)); // [0, 1, 1, 2, 3, 5, 8]
+
+// function uniqueArray(arr) {
+//   return [...new Set(arr)];
+// }
+// console.log(uniqueArray([1, 2, 2, 3, 3, 4])); // [1, 2, 3, 4]
+
+// function mergeArrays(a, b) {
+//   return [...a, ...b];
+// }
+// console.log(mergeArrays([1, 2], [3, 4])); // [1, 2, 3, 4]
+
+// function squareElements(arr) {
+//   return arr.map(x => x * x);
+// }
+// console.log(squareElements([2, 3, 4])); // [4, 9, 16]
+
+// function countVowels(str) {
+//   return (str.match(/[aeiou]/gi) || []).length;
+// }
+// console.log(countVowels("education")); // 5
+
+// function isPrime(n) {
+//   if (n <= 1) return false;
+//   for (let i = 2; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) return false;
+//   }
+//   return true;
+// }
+// console.log(isPrime(7)); // true
+
+// function extractLetters(str) {
+//   return str.replace(/[^a-zA-Z]/g, '');
+// }
+// console.log(extractLetters("abc123!@#")); // "abc"
+
+// function includesElement(arr, item) {
+//   return arr.includes(item);
+// }
+// console.log(includesElement([1, 2, 3], 2)); // true
+
+// function indexMap(arr) {
+//   return arr.map((item, index) => `${index}: ${item}`);
+// }
+// console.log(indexMap(['a', 'b', 'c'])); // ['0: a', '1: b', '2: c']
+
+// function fizzBuzz() {
+//   for (let i = 1; i <= 100; i++) {
+//     let output = '';
+//     if (i % 3 === 0) output += 'Fizz';
+//     if (i % 5 === 0) output += 'Buzz';
+//     console.log(output || i);
+//   }
+// }
+// fizzBuzz();
+
+// function stringLength(str) {
+//   return str.length;
+// }
+// console.log(stringLength("JavaScript")); // 10
+
+// function findMin(arr) {
+//   return Math.min(...arr);
+// }
+// console.log(findMin([4, 1, 9])); // 1
+
+// function removeDuplicates(arr) {
+//   return arr.filter((item, index) => arr.indexOf(item) === index);
+// }
+// console.log(removeDuplicates([1, 2, 2, 3])); // [1, 2, 3]
+
+// function average(arr) {
+//   return arr.reduce((a, b) => a + b, 0) / arr.length;
+// }
+// console.log(average([10, 20, 30])); // 20
+
+// function capitalize(str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// }
+// console.log(capitalize("hello")); // Hello
+
+// function countPositive(arr) {
+//   return arr.filter(n => n > 0).length;
+// }
+// console.log(countPositive([-1, 3, 5, 0, -2])); // 2
+
+// function digitSum(n) {
+//   return n.toString().split('').reduce((sum, d) => sum + +d, 0);
+// }
+// console.log(digitSum(1234)); // 10
+
+// function digitSum(n) {
+//   return n.toString().split('').reduce((sum, d) => sum + +d, 0);
+// }
+// console.log(digitSum(1234)); // 10
+
+// function hasValue(obj, value) {
+//   return Object.values(obj).includes(value);
+// }
+// console.log(hasValue({a: 1, b: 2}, 2)); // true
+
+// function countLetters(str) {
+//   return str.toLowerCase().replace(/[^a-z]/g, '').length;
+// }
+// console.log(countLetters("Hello 123!")); // 5
+
+// function mostFrequentChar(str) {
+//   let map = {};
+//   for (let char of str) {
+//     map[char] = (map[char] || 0) + 1;
+//   }
+//   let maxChar = '', maxCount = 0;
+//   for (let char in map) {
+//     if (map[char] > maxCount) {
+//       maxChar = char;
+//       maxCount = map[char];
+//     }
+//   }
+//   return maxChar;
+// }
+// console.log(mostFrequentChar("hello world")); // l
+
+// function wordCount(str) {
+//   return str.trim().split(/\s+/).length;
+// }
+// console.log(wordCount("Hello world from JavaScript")); // 4
+
+// function toBinary(n) {
+//   return n.toString(2);
+// }
+// console.log(toBinary(10)); // "1010"
+
+// function randomElement(arr) {
+//   let index = Math.floor(Math.random() * arr.length);
+//   return arr[index];
+// }
+// console.log(randomElement([10, 20, 30, 40])); // tasodifiy son
+
+// function sortByLength(arr) {
+//   return arr.sort((a, b) => a.length - b.length);
+// }
+// console.log(sortByLength(["cat", "elephant", "dog"])); // ["cat", "dog", "elephant"]
+
+// function getPrimes(n) {
+//   let primes = [];
+//   for (let i = 2; i <= n; i++) {
+//     let isPrime = true;
+//     for (let j = 2; j <= Math.sqrt(i); j++) {
+//       if (i % j === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) primes.push(i);
+//   }
+//   return primes;
+// }
+// console.log(getPrimes(20)); // [2, 3, 5, 7, 11, 13, 17, 19]
+
+// function capitalizeWords(str) {
+//   return str.split(' ').map(word =>
+//     word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+//   ).join(' ');
+// }
+// console.log(capitalizeWords("hello world")); // "Hello World"
+
+// function Cars(make, speed) {
+//   this.make = make;
+//   this.speed = speed;
+// }
+
+// Cars.prototype.accelerate = function () {
+//   this.speed += 10;
+//   console.log(`${this.make} endi ${this.speed} km/h tezlikka ega `);
+// };
+
+// const BMW = new Cars("BMW", 300);
+// const Mers = new Cars("Mers", 500);
+// console.log(BMW, Mers);
+
+class Car {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
   }
-  return sum;
-}
-console.log(sumToN(10)); // 55
 
-
-function findMax(arr) {
-  return Math.max(...arr);
-}
-console.log(findMax([3, 10, 5, 8])); // 10
-
-function reverseArray(arr) {
-  return arr.reverse();
-}
-console.log(reverseArray([1, 2, 3])); // [3, 2, 1]
-
-
-
-function isPalindrome(str) {
-  let reversed = str.split('').reverse().join('');
-  return str === reversed;
-}
-console.log(isPalindrome("madam")); // true
-
-
-
-function countEven(arr) {
-  return arr.filter(num => num % 2 === 0).length;
-}
-console.log(countEven([1, 2, 3, 4, 6])); // 3
-
-
-
-function fibonacci(n) {
-  let result = [0, 1];
-  for (let i = 2; i < n; i++) {
-    result.push(result[i - 1] + result[i - 2]);
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} tezlik oshdi `);
   }
-  return result.slice(0, n);
-}
-console.log(fibonacci(7)); // [0, 1, 1, 2, 3, 5, 8]
 
-
-
-function uniqueArray(arr) {
-  return [...new Set(arr)];
-}
-console.log(uniqueArray([1, 2, 2, 3, 3, 4])); // [1, 2, 3, 4]
-
-
-function mergeArrays(a, b) {
-  return [...a, ...b];
-}
-console.log(mergeArrays([1, 2], [3, 4])); // [1, 2, 3, 4]
-
-
-function squareElements(arr) {
-  return arr.map(x => x * x);
-}
-console.log(squareElements([2, 3, 4])); // [4, 9, 16]
-
-
-
-function countVowels(str) {
-  return (str.match(/[aeiou]/gi) || []).length;
-}
-console.log(countVowels("education")); // 5
-
-
-function isPrime(n) {
-  if (n <= 1) return false;
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) return false;
-  }
-  return true;
-}
-console.log(isPrime(7)); // true
-
-
-function extractLetters(str) {
-  return str.replace(/[^a-zA-Z]/g, '');
-}
-console.log(extractLetters("abc123!@#")); // "abc"
-
-
-function includesElement(arr, item) {
-  return arr.includes(item);
-}
-console.log(includesElement([1, 2, 3], 2)); // true
-
-
-function indexMap(arr) {
-  return arr.map((item, index) => `${index}: ${item}`);
-}
-console.log(indexMap(['a', 'b', 'c'])); // ['0: a', '1: b', '2: c']
-
-
-function fizzBuzz() {
-  for (let i = 1; i <= 100; i++) {
-    let output = '';
-    if (i % 3 === 0) output += 'Fizz';
-    if (i % 5 === 0) output += 'Buzz';
-    console.log(output || i);
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} endi ${this.speed} tezlik km/h oshdi `);
   }
 }
-fizzBuzz();
-
-
-function stringLength(str) {
-  return str.length;
-}
-console.log(stringLength("JavaScript")); // 10
-
-
-function findMin(arr) {
-  return Math.min(...arr);
-}
-console.log(findMin([4, 1, 9])); // 1
-
-
-
-function removeDuplicates(arr) {
-  return arr.filter((item, index) => arr.indexOf(item) === index);
-}
-console.log(removeDuplicates([1, 2, 2, 3])); // [1, 2, 3]
-
-
-function average(arr) {
-  return arr.reduce((a, b) => a + b, 0) / arr.length;
-}
-console.log(average([10, 20, 30])); // 20
-
-
-function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
-console.log(capitalize("hello")); // Hello
-
-
-function countPositive(arr) {
-  return arr.filter(n => n > 0).length;
-}
-console.log(countPositive([-1, 3, 5, 0, -2])); // 2
-
-
-function digitSum(n) {
-  return n.toString().split('').reduce((sum, d) => sum + +d, 0);
-}
-console.log(digitSum(1234)); // 10
-
-
-function digitSum(n) {
-  return n.toString().split('').reduce((sum, d) => sum + +d, 0);
-}
-console.log(digitSum(1234)); // 10
-
-
-function hasValue(obj, value) {
-  return Object.values(obj).includes(value);
-}
-console.log(hasValue({a: 1, b: 2}, 2)); // true
-
-
-function countLetters(str) {
-  return str.toLowerCase().replace(/[^a-z]/g, '').length;
-}
-console.log(countLetters("Hello 123!")); // 5
-
-
-
-function mostFrequentChar(str) {
-  let map = {};
-  for (let char of str) {
-    map[char] = (map[char] || 0) + 1;
-  }
-  let maxChar = '', maxCount = 0;
-  for (let char in map) {
-    if (map[char] > maxCount) {
-      maxChar = char;
-      maxCount = map[char];
-    }
-  }
-  return maxChar;
-}
-console.log(mostFrequentChar("hello world")); // l
-
-
-function wordCount(str) {
-  return str.trim().split(/\s+/).length;
-}
-console.log(wordCount("Hello world from JavaScript")); // 4
-
-
-function toBinary(n) {
-  return n.toString(2);
-}
-console.log(toBinary(10)); // "1010"
-
-
-function randomElement(arr) {
-  let index = Math.floor(Math.random() * arr.length);
-  return arr[index];
-}
-console.log(randomElement([10, 20, 30, 40])); // tasodifiy son
-
-
-function sortByLength(arr) {
-  return arr.sort((a, b) => a.length - b.length);
-}
-console.log(sortByLength(["cat", "elephant", "dog"])); // ["cat", "dog", "elephant"]
-
-
-function getPrimes(n) {
-  let primes = [];
-  for (let i = 2; i <= n; i++) {
-    let isPrime = true;
-    for (let j = 2; j <= Math.sqrt(i); j++) {
-      if (i % j === 0) {
-        isPrime = false;
-        break;
-      }
-    }
-    if (isPrime) primes.push(i);
-  }
-  return primes;
-}
-console.log(getPrimes(20)); // [2, 3, 5, 7, 11, 13, 17, 19]
-
-
-function capitalizeWords(str) {
-  return str.split(' ').map(word =>
-    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-  ).join(' ');
-}
-console.log(capitalizeWords("hello world")); // "Hello World"
-
