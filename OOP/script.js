@@ -177,7 +177,6 @@
 // const obj = new Test();
 // console.log(obj.sayHello());
 
-
 // class Car {
 //     constructor(make, speed) {
 //       this.make = make;
@@ -206,3 +205,49 @@
 //   // Obyekt metodlaridan foydalanamiz
 //   audi.accelerate(); // Audi 150 km/h bilan harakatlanmoqda.
 //   audi.brake();      // Audi sekinlashib 145 km/h bo‘ldi.
+
+// const person = {
+//   name: "Alisa",
+// };
+
+// function introduce(age, city) {
+//   console.log(`salom mening ismim ${this.name} yoshim ${age} va men ${city} daman`);
+// }
+
+// introduce.apply;(person, [30, "Karshi"] )
+
+// const person = {
+//   greet: function () {
+//     console.log("hello");
+//   },
+// };
+
+// const student = {};
+// student.__proto__ = person;
+// student.greet();
+
+
+// const person={
+//     greet:function(){
+//         console.log("Salom men insonman");
+//     }
+// }
+
+
+// const student= Object.create(person)
+// student.greet()
+
+const person ={
+    greet:function(){
+        console.log(`salom mening ismim ${this.name}`);
+
+    }
+}
+
+const student=Object.create(person,{
+    name:{value:"Asilbek", writable:true},
+    course:{value:"Front-end", writable:true},
+})
+
+student.greet()
+console.log(student);
