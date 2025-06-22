@@ -178,31 +178,31 @@
 // console.log(obj.sayHello());
 
 
-class Car {
-    constructor(make, speed) {
-      this.make = make;
-      this.speed = speed;
-    }
+// class Car {
+//     constructor(make, speed) {
+//       this.make = make;
+//       this.speed = speed;
+//     }
 
-    accelerate() {
-      this.speed += 10;
-      console.log(`${this.make} ${this.speed} km/h bilan harakatlanmoqda.`);
-    }
+//     accelerate() {
+//       this.speed += 10;
+//       console.log(`${this.make} ${this.speed} km/h bilan harakatlanmoqda.`);
+//     }
 
-    brake() {
-      this.speed -= 5;
-      console.log(`${this.make} sekinlashib ${this.speed} km/h bo‘ldi.`);
-    }
+//     brake() {
+//       this.speed -= 5;
+//       console.log(`${this.make} sekinlashib ${this.speed} km/h bo‘ldi.`);
+//     }
 
-    // STATIC metod – obyekt yaratadi
-    static createCar(make, speed) {
-      return new Car(make, speed);
-    }
-  }
+//     // STATIC metod – obyekt yaratadi
+//     static createCar(make, speed) {
+//       return new Car(make, speed);
+//     }
+//   }
 
-  // Static metod orqali obyekt yaratamiz
-  const audi = Car.createCar("Audi", 140);
+//   // Static metod orqali obyekt yaratamiz
+//   const audi = Car.createCar("Audi", 140);
 
-  // Obyekt metodlaridan foydalanamiz
-  audi.accelerate(); // Audi 150 km/h bilan harakatlanmoqda.
-  audi.brake();      // Audi sekinlashib 145 km/h bo‘ldi.
+//   // Obyekt metodlaridan foydalanamiz
+//   audi.accelerate(); // Audi 150 km/h bilan harakatlanmoqda.
+//   audi.brake();      // Audi sekinlashib 145 km/h bo‘ldi.
