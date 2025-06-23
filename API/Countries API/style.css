@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-flow: center;
+    justify-content: center;
+}
+.countries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 4rem;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 1s;
+    border: 3px solid green;
+
+}
+.country{
+    width: 200px;
+    height: 300px;
+    background-color: rebeccapurple;
+    box-shadow: -2px 2px 13px 0px rgba(0,0,0,0.75);
+
+}

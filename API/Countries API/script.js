@@ -1,9 +1,13 @@
 
+
+
+ const getCountryData=function(country){
+
 const cardContainer = document.getElementsByClassName("card-container");
 const countries = document.getElementsByClassName("countries");
 
 const request = new XMLHttpRequest()
-request.open("GET", 'https://restcountries.com/v3.1/name/Uzbekistan')
+request.open("GET", `https://restcountries.com/v3.1/name/${country}`)
 request.send()
 
 request.addEventListener("load", ()=>{
@@ -23,5 +27,8 @@ request.addEventListener("load", ()=>{
     `
 
     cardContainer.insertAdjacentHTML('beforeend', html)
-    // countries.style.opacity=1
+    countries.style.opacity=1
 })
+ }
+
+ getCountryData('Uzbekistan')
