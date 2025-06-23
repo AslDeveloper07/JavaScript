@@ -1,4 +1,4 @@
-const url = "https://fakestoreapi.com/products/1";
+const url = "https://dummyjson.com/products?limit=10";
 
 const userContainer = document.getElementById("user-container");
 
