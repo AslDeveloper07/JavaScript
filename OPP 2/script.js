@@ -1,9 +1,8 @@
-const API = fetch("https://restcountries.com/v3.1/name/uzbekistan ").then(
-  (response) => {
-    console.log(response.json());
-    return response.json();
-});
-.then((API)=>{
-  console.log(API);
-})
-// console.log(API);
+fetch("https://restcountries.com/v3.1/name/uzbekistan")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data); // bu yerda API'dan kelgan haqiqiy ma'lumotni ko'rasiz
+  })
+  .catch((error) => {
+    console.error("Xatolik:", error);
+  });
