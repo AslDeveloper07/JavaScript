@@ -1,4 +1,3 @@
-
 /*
 //1 - MASALA
 
@@ -717,4 +716,25 @@ function listUsers() {
 
 
 */
+
+function candy(a, b) {
+  return b === 0 ? a : candy(b, a % b);
+}
+
+function qand(a, b) {
+  return (a * b) / candy(a, b);
+}
+
+function minCandy(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result = qand(result, i);
+  }
+  return result;
+}
+
+const n = 4;
+console.log("Minimal konfetlar soni:", minCandy(n));
+
+
 
